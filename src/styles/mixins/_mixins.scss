@@ -1,0 +1,37 @@
+@use "sass:map";
+
+// 800px, 1150px, 1400px
+$breakpoints-up: (
+  "medium": "50em",
+  "large": "71.875em",
+  "xlarge": "87.5em",
+);
+
+// 799px, 1149px, 1399px
+$breakpoints-down: (
+  "small": "49.9375em",
+  "medium": "71.8125em",
+  "large": "87.4375em",
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map.get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map.get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
