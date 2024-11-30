@@ -1,0 +1,30 @@
+@use "../../styles/main.scss" as *;
+
+.tagline_box {
+  @include flex-row();
+  width: fit-content;
+  height: rem(25);
+  padding: rem(10) rem(16);
+  justify-content: center;
+  align-items: center;
+  gap: rem(4);
+  border-radius: rem(10);
+
+  text-align: center;
+  font-family: var(--poppins);
+  font-size: rem(14);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.primary_tagline {
+  background-color: $deep-blue;
+  color: $base-white;
+}
+
+.secondary_tagline {
+  background-color: rgba($deep-blue, 0.1);
+  color: $deep-blue;
+}
