@@ -13,8 +13,47 @@
     margin: auto;
     width: 100%;
     max-width: rem(1440);
+
+    @include flex-row();
+    justify-content: space-between;
   }
 
   &__logo {
+    width: rem(108);
+    @include breakpoint(large) {
+      width: rem(216);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__buttons {
+    display: none;
+    @include breakpoint(large) {
+      @include flex-row();
+    }
+    gap: rem(40);
+    align-items: center;
+
+    &__login {
+      background-color: transparent;
+      color: $base-white;
+      font-size: rem(16);
+      font-style: normal;
+      font-weight: 700;
+      line-height: rem(24);
+      transition: all 0.4s ease-in-out;
+    }
+
+    &__login:hover {
+      color: $navy-blue;
+    }
+    &__book {
+      background-color: $yellow;
+    }
   }
 }

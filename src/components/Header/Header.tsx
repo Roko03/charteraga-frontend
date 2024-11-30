@@ -3,6 +3,8 @@ import styles from "./Header.module.scss";
 import Image from "next/image";
 import Logo from "../../assets/icons/logo.svg";
 import Links from "../Links";
+import Button from "@/design-system/Button";
+import Link from "next/link";
 
 interface HeaderProps {}
 
@@ -10,10 +12,16 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
-        <div className={styles.header__logo}>
+        <Link href={"/"} className={styles.header__logo}>
           <Image src={Logo} alt="logo" />
-        </div>
+        </Link>
         <Links />
+        <div className={styles.header__buttons}>
+          <Link href={"/login"} className={styles.header__buttons__login}>
+            Log in
+          </Link>
+          <Button className={styles.header__buttons__book}>Book now</Button>
+        </div>
       </div>
     </header>
   );
