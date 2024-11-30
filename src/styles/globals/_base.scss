@@ -1,11 +1,11 @@
 @use "../mixins/mixins" as *;
 @use "../utils/functions" as *;
+@use "../globals/colors" as *;
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--poppins);
 }
 
 a {
@@ -20,6 +20,8 @@ a {
 body {
   display: flex;
   flex-direction: column;
+  font-family: var(--poppins);
+  background-color: $sky-blue;
 }
 
 input,
