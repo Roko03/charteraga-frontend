@@ -5,12 +5,17 @@ import Logo from "../../assets/icons/logo.svg";
 import Links from "../Links";
 import Button from "@/design-system/Button";
 import Link from "next/link";
+import clsx from "clsx";
 
-interface HeaderProps {}
+type HeaderVariant = "primary" | "secondary";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  variant?: HeaderVariant;
+}
+
+const Header: React.FC<HeaderProps> = ({ variant = "primary" }) => {
   return (
-    <header className={styles.header}>
+    <header className={clsx([styles.header, [styles[variant]]])}>
       <div className={styles.header__container}>
         <Link href={"/"} className={styles.header__logo}>
           <Image src={Logo} alt="logo" />

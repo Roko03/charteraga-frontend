@@ -41,7 +41,6 @@
 
     &__login {
       background-color: transparent;
-      color: $base-white;
       font-size: rem(16);
       font-style: normal;
       font-weight: 700;
@@ -49,11 +48,42 @@
       transition: all 0.4s ease-in-out;
     }
 
+    &__book {
+      background-color: $yellow;
+    }
+  }
+}
+
+.primary {
+  .header__buttons {
+    &__login {
+      color: $base-white;
+    }
+
     &__login:hover {
       color: $navy-blue;
     }
-    &__book {
-      background-color: $yellow;
+  }
+}
+
+.secondary {
+  ul {
+    li a {
+      color: $navy-blue;
+    }
+
+    li:hover a {
+      color: $base-white;
+    }
+  }
+
+  .header__buttons {
+    &__login {
+      color: $navy-blue;
+    }
+
+    &__login:hover {
+      color: $base-white;
     }
   }
 }
