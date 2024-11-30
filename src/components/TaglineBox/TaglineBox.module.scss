@@ -1,0 +1,12 @@
+@use "../../styles/main.scss" as *;
+
+.tagline_box {
+}
+
+.primary_tagline {
+  background-color: $deep-blue;
+}
+
+.secondary_tagline {
+  background-color: rgba($deep-blue, 0.1);
+}
