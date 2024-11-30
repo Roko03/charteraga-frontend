@@ -24,3 +24,21 @@
   letter-spacing: 1.22px;
   text-transform: uppercase;
 }
+
+.button_secondary {
+  background-color: $base-white;
+  color: $base-black;
+  min-width: rem(150);
+  padding: rem(8) rem(12) rem(8) rem(18);
+
+  &__arrow {
+    @include flex-column();
+    align-items: center;
+    justify-content: center;
+    width: rem(28);
+    height: rem(28);
+    border-radius: 100%;
+    background-color: rgba($azure, 0.08);
+    color: #000;
+  }
+}
