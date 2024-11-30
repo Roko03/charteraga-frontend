@@ -1,0 +1,26 @@
+@use "../../styles/main.scss" as *;
+
+.button {
+  @include flex-row();
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--poppins);
+  border-radius: rem(50);
+  align-items: center;
+  justify-content: center;
+
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: 500;
+  line-height: rem(24);
+}
+
+.button_primary {
+  text-align: center;
+  padding: rem(10);
+  min-width: rem(147);
+  gap: rem(10);
+  letter-spacing: 1.22px;
+  text-transform: uppercase;
+}
