@@ -1,3 +1,7 @@
+@use "../mixins/mixins" as *;
+@use "../utils/functions" as *;
+@use "../globals/colors" as *;
+
 html,
 body {
   padding: 0;
@@ -16,6 +20,8 @@ a {
 body {
   display: flex;
   flex-direction: column;
+  font-family: var(--poppins);
+  background-color: $sky-blue;
 }
 
 input,
@@ -23,4 +29,40 @@ select {
   width: 100%;
   border: none;
   outline: none;
+}
+
+h1 {
+  font-size: rem(84);
+  font-weight: 900;
+  letter-spacing: -2.32px;
+  line-height: 109%;
+  font-style: normal;
+
+  @include breakpoint(medium) {
+    font-size: rem(114);
+  }
+}
+
+h2 {
+  font-size: rem(32);
+  font-feature-settings: "liga" off, "clig" off;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+
+  @include breakpoint(medium) {
+    font-size: rem(46);
+  }
+}
+
+h3 {
+  font-size: rem(24);
+  font-feature-settings: "liga" off, "clig" off;
+  font-weight: 600;
+  line-height: 46px;
+  font-style: normal;
+
+  @include breakpoint(medium) {
+    font-size: rem(36);
+  }
 }
