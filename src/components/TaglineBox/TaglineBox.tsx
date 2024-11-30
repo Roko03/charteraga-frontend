@@ -6,11 +6,11 @@ type TaglineBoxVariant = "primary" | "secondary";
 
 interface TaglineBoxProps {
   title: string;
-  variant: TaglineBoxVariant;
+  variant?: TaglineBoxVariant;
 }
 
 const TaglineBox: React.FC<TaglineBoxProps> = ({
-  title = "",
+  title,
   variant = "primary",
 }) => {
   const getTaglineColor = (variant: TaglineBoxVariant) => {
