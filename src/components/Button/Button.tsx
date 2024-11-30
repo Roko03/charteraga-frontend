@@ -1,8 +1,7 @@
 import React, { ButtonHTMLAttributes } from "react";
 import clsx from "clsx";
 import styles from "./Button.module.scss";
-
-type ButtonVariant = "primary" | "secondary";
+type ButtonVariant = "primary" | "secondary" | "cardButton";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -18,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({
     const buttonVariants: { [key in ButtonVariant]: string } = {
       primary: styles.button_primary,
       secondary: styles.button_secondary,
+      cardButton: styles.button_card,
     };
 
     return buttonVariants[variant];
@@ -30,7 +30,9 @@ const Button: React.FC<ButtonProps> = ({
     >
       {children}
       {variant === "secondary" && (
-        <div className={styles.button_secondary__arrow}></div>
+        <div className={styles.button_secondary__arrow}>
+          <i className={styles.button_secondary__arrow__image}></i>
+        </div>
       )}
     </button>
   );
