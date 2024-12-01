@@ -1,0 +1,43 @@
+@use "../../../styles/main.scss" as *;
+
+.banner_section {
+  height: 100dvh;
+  width: 100%;
+  position: relative;
+
+  &__text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 3;
+    color: $base-white;
+    @include flex-column();
+    gap: rem(8);
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: rem(42);
+
+      @include breakpoint(medium) {
+        font-size: rem(116);
+      }
+    }
+
+    p {
+      font-size: rem(16);
+
+      @include breakpoint(medium) {
+        font-size: rem(18);
+      }
+    }
+
+    &__icons {
+      @include flex-row();
+      gap: rem(7.53);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

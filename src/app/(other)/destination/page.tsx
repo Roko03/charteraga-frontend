@@ -1,3 +1,3 @@
-export default function Destination() {
-  return <div>Hello</div>;
+export default function DestinationPage() {
+  return <div>Destination page</div>;
 }
