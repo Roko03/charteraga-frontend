@@ -7,10 +7,10 @@ import PaymentThree from "../../assets/icons/dollar-3.svg";
 import clsx from "clsx";
 
 type PaymentMethodCardVariant = "first" | "second" | "third";
-type PaymentMethodCardObject = {
-  imageUrl: any;
-  number: number;
-  text: string;
+type PaymentMethodDetails = {
+  icon: any;
+  paymentTitle: number;
+  label: string;
   range: number;
 };
 
@@ -25,24 +25,24 @@ const PaymentMethodCard: React.FC<PaymentMethodCardProps> = ({
 }) => {
   const getPaymentMethodCardVariant = (payment: PaymentMethodCardVariant) => {
     const paymentMethodVariant: {
-      [key in PaymentMethodCardVariant]: PaymentMethodCardObject;
+      [key in PaymentMethodCardVariant]: PaymentMethodDetails;
     } = {
       first: {
-        imageUrl: PaymentOne,
-        number: 10,
-        text: "pay when booking",
+        icon: PaymentOne,
+        paymentTitle: 10,
+        label: "pay when booking",
         range: 10,
       },
       second: {
-        imageUrl: PaymentTwo,
-        number: 40,
-        text: "pay 30 days after booking",
+        icon: PaymentTwo,
+        paymentTitle: 40,
+        label: "pay 30 days after booking",
         range: 40,
       },
       third: {
-        imageUrl: PaymentThree,
-        number: 50,
-        text: "pay 60 days before trip",
+        icon: PaymentThree,
+        paymentTitle: 50,
+        label: "pay 60 days before trip",
         range: 100,
       },
     };
@@ -53,13 +53,10 @@ const PaymentMethodCard: React.FC<PaymentMethodCardProps> = ({
   return (
     <div className={clsx([styles.payment_method_card, [styles[variant]]])}>
       <div className={styles.payment_method_card__dollar}>
-        <Image
-          src={getPaymentMethodCardVariant(payment).imageUrl}
-          alt="payment"
-        />
+        <Image src={getPaymentMethodCardVariant(payment).icon} alt="payment" />
       </div>
-      <h3>{getPaymentMethodCardVariant(payment).number}</h3>
-      <p>{getPaymentMethodCardVariant(payment).text}</p>
+      <h3>{getPaymentMethodCardVariant(payment).paymentTitle}%</h3>
+      <p>{getPaymentMethodCardVariant(payment).label}</p>
       <div className={styles.payment_method_card__range}>
         <span
           style={{ width: `${getPaymentMethodCardVariant(payment).range}%` }}
