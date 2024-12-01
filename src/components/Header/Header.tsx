@@ -6,6 +6,7 @@ import Links from "../Links";
 import Button from "@/design-system/Button";
 import Link from "next/link";
 import clsx from "clsx";
+import Burger from "../Burger";
 
 type HeaderVariant = "primary" | "secondary";
 
@@ -27,6 +28,7 @@ const Header: React.FC<HeaderProps> = ({ variant = "primary" }) => {
           </Link>
           <Button className={styles.header__buttons__book}>Book now</Button>
         </div>
+        <Burger variant={variant} />
       </div>
     </header>
   );
