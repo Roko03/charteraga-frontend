@@ -13,6 +13,7 @@
     z-index: 3;
     color: $base-white;
     @include flex-column();
+    gap: rem(8);
     align-items: center;
     justify-content: center;
 
@@ -30,6 +31,13 @@
       @include breakpoint(medium) {
         font-size: rem(18);
       }
+    }
+
+    &__icons {
+      @include flex-row();
+      gap: rem(7.53);
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
