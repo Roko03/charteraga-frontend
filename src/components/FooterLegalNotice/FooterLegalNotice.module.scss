@@ -1,0 +1,68 @@
+@use "../../styles/main.scss" as *;
+
+.footer_legal_notice {
+  width: 100%;
+  @include container();
+  @include flex-column();
+  padding-top: rem(32);
+  @include breakpoint(medium) {
+    padding-top: rem(64);
+  }
+
+  span {
+    width: 100%;
+    height: rem(1);
+    background-color: rgba($base-white, 0.2);
+  }
+
+  &__box {
+    padding: rem(42) 0;
+    display: grid;
+    grid-template-areas:
+      "links links"
+      "copywright copywright";
+    row-gap: rem(42);
+
+    @include breakpoint(medium) {
+      padding: rem(64) 0 rem(70);
+      grid-template-areas:
+        "copywright links"
+        "copywright links";
+    }
+
+    align-items: center;
+    @include breakpoint(medium) {
+      align-items: end;
+    }
+    justify-content: space-between;
+
+    p {
+      grid-area: copywright;
+      font-size: rem(13);
+      font-weight: 400;
+      line-height: 22px;
+      color: rgba($base-white, 0.6);
+      text-align: center;
+      @include breakpoint(medium) {
+        text-align: start;
+      }
+    }
+
+    ul {
+      grid-area: links;
+      @include flex-row();
+      justify-content: center;
+      @include breakpoint(medium) {
+        justify-content: flex-start;
+      }
+      gap: rem(69);
+
+      li a {
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: 140%;
+        color: rgba($base-white, 0.6);
+      }
+    }
+  }
+}

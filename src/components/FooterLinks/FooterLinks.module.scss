@@ -1,0 +1,26 @@
+@use "../../styles/main.scss" as *;
+
+.footer_links {
+  @include flex-column();
+  gap: rem(20);
+  align-items: flex-start;
+
+  p {
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: 140%;
+    color: $base-white;
+  }
+
+  ul {
+    @include flex-column();
+    gap: rem(6);
+
+    li a {
+      font-size: rem(14);
+      font-weight: 400;
+      line-height: rem(28);
+      color: rgba($base-white, 0.6);
+    }
+  }
+}

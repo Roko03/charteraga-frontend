@@ -1,0 +1,54 @@
+@use "../../styles/main.scss" as *;
+
+.footer {
+  padding: rem(68) 0;
+  width: 100%;
+  background-color: $navy-blue;
+
+  &__container {
+    @include container();
+
+    display: grid;
+    row-gap: rem(60);
+    grid-template-areas:
+      "logo logo logo"
+      "links links links"
+      "social social social";
+
+    @include breakpoint(medium) {
+      row-gap: rem(90);
+      grid-template-areas:
+        "logo logo logo"
+        "links links social"
+        "links links social";
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    width: fit-content;
+    align-self: flex-start;
+  }
+
+  &__links {
+    grid-area: links;
+    @include flex-row();
+    flex-wrap: wrap;
+    column-gap: rem(80);
+    row-gap: rem(42);
+
+    @include breakpoint(medium) {
+      gap: rem(120);
+    }
+  }
+
+  &__social {
+    grid-area: social;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(medium) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}

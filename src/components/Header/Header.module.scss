@@ -10,11 +10,7 @@
   background-color: transparent;
 
   &__container {
-    padding: 0 rem(40) 0 rem(50);
-
-    margin: auto;
-    width: 100%;
-    max-width: rem(1440);
+    @include container();
 
     @include flex-row();
     justify-content: space-between;
