@@ -35,3 +35,11 @@ $breakpoints-down: (
   display: flex;
   flex-direction: row;
 }
+
+@mixin container {
+  padding: 0 40px 0 50px;
+
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+}
