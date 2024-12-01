@@ -1,0 +1,36 @@
+@use "../../styles/main.scss" as *;
+
+.link_list {
+  li {
+    cursor: pointer;
+    a {
+      font-size: rem(16);
+      font-style: normal;
+      font-weight: 400;
+      line-height: rem(24);
+      color: $base-white;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  li:hover a {
+    color: $navy-blue;
+  }
+}
+
+.header {
+  display: none;
+
+  @include breakpoint(large) {
+    @include flex-row();
+    align-items: center;
+
+    gap: rem(32);
+  }
+}
+
+.menu {
+  @include flex-column();
+  align-items: center;
+  gap: rem(36);
+}

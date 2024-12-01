@@ -1,0 +1,98 @@
+@use "../../styles/main.scss" as *;
+
+.header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: rem(140);
+  @include flex-column();
+  align-items: center;
+  background-color: transparent;
+
+  &__container {
+    padding: 0 rem(40) 0 rem(50);
+
+    margin: auto;
+    width: 100%;
+    max-width: rem(1440);
+
+    @include flex-row();
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: rem(108);
+    @include breakpoint(large) {
+      width: rem(216);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__buttons {
+    display: none;
+    @include breakpoint(large) {
+      @include flex-row();
+    }
+    gap: rem(40);
+    align-items: center;
+
+    &__login {
+      background-color: transparent;
+      font-size: rem(16);
+      font-style: normal;
+      font-weight: 700;
+      line-height: rem(24);
+      transition: all 0.4s ease-in-out;
+    }
+
+    &__book {
+      background-color: $yellow;
+    }
+  }
+}
+
+.primary {
+  .header__buttons {
+    &__login {
+      color: $base-white;
+    }
+
+    &__login:hover {
+      color: $navy-blue;
+    }
+  }
+}
+
+.secondary {
+  ul {
+    li a {
+      color: $navy-blue;
+    }
+
+    li:hover a {
+      color: $base-white;
+    }
+  }
+
+  .header__buttons {
+    &__login {
+      color: $navy-blue;
+    }
+
+    &__login:hover {
+      color: $base-white;
+    }
+  }
+}
+
+.menu_buttons {
+  margin-top: auto;
+  @include flex-row();
+  align-items: center;
+  gap: rem(20);
+}
