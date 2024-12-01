@@ -1,6 +1,8 @@
 @use "../../styles/main.scss" as *;
 
 .header {
+  position: fixed;
+  z-index: 99;
   width: 100%;
   height: rem(140);
   @include flex-column();

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./Header.module.scss";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import Burger from "../Burger";
 import Menu from "../Menu";
+import useMenu from "@/hooks/useMenu";
 
 type HeaderVariant = "primary" | "secondary";
 
@@ -16,6 +18,8 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ variant = "primary" }) => {
+  const [isMenuOpen, toogleMenu] = useMenu();
+
   return (
     <>
       <header className={clsx([styles.header, [styles[variant]]])}>
@@ -30,10 +34,14 @@ const Header: React.FC<HeaderProps> = ({ variant = "primary" }) => {
             </Link>
             <Button className={styles.header__buttons__book}>Book now</Button>
           </div>
-          <Burger variant={variant} />
+          <Burger
+            variant={variant}
+            isActive={isMenuOpen}
+            onClick={toogleMenu}
+          />
         </div>
       </header>
-      <Menu>
+      <Menu isMenuOpen={isMenuOpen}>
         <div className={styles.menu_buttons}>
           <Link href={"/login"} className={styles.header__buttons__login}>
             Log in

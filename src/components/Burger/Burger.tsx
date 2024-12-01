@@ -13,6 +13,7 @@ const Burger: React.FC<BurgerProps> = ({
   isActive = false,
   onClick = undefined,
 }) => {
+  console.log(isActive);
   return (
     <div
       onClick={onClick}

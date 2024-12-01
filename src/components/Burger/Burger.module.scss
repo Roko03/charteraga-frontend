@@ -43,22 +43,6 @@
   }
 }
 
-.burger_active {
-  span {
-    background: transparent;
-  }
-
-  span::before {
-    top: 50%;
-    transform: rotate(45deg);
-  }
-
-  span::after {
-    top: 50%;
-    transform: rotate(-45deg);
-  }
-}
-
 .primary {
   span {
     background-color: $base-white;
@@ -78,5 +62,21 @@
   span::before,
   span::after {
     background-color: $navy-blue;
+  }
+}
+
+.burger_active {
+  span {
+    background: transparent !important;
+  }
+
+  span::before {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  span::after {
+    top: 50%;
+    transform: rotate(-45deg);
   }
 }
