@@ -4,16 +4,10 @@ import styles from "./BannerSection.module.scss";
 const BannerSection: React.FC = () => {
   return (
     <section className={styles.banner_section}>
-      <div className={styles.banner}>
-        <div className={styles.banner__header}></div>
-        <video
-          src={require("../../../assets/video/banner-video.mp4")}
-          autoPlay
-          muted
-          loop
-          className={styles.banner__video}
-        />
-        <div className={styles.banner__footer}></div>
+      <div className={styles.banner_section__text}>
+        <p>Sail your way with</p>
+        <h1>CHARTERAG</h1>
+        <div></div>
       </div>
     </section>
   );
