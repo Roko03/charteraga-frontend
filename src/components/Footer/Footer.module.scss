@@ -44,5 +44,8 @@
 
   &__social {
     grid-area: social;
+    @include breakpoint(medium) {
+      margin-left: auto;
+    }
   }
 }
