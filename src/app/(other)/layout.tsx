@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <Layout variant={"primary"}>{children}</Layout>
+        <Layout variant={"secondary"}>{children}</Layout>
       </body>
     </html>
   );
