@@ -5,7 +5,9 @@ import ExperienceRatingList from "../ExperienceRatingList";
 const ExperienceSection = () => {
   return (
     <section className={styles.experience_section}>
-      <ExperienceRatingList />
+      <div className={styles.experience_section__container}>
+        <ExperienceRatingList />
+      </div>
     </section>
   );
 };

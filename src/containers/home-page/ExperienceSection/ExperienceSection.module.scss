@@ -1,1 +1,11 @@
 @use "../../../styles/main.scss" as *;
+
+.experience_section {
+  padding: rem(68) 0 rem(172);
+  width: 100%;
+  background-color: $navy-blue;
+
+  &__container {
+    @include container();
+  }
+}
