@@ -12,9 +12,9 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ title, linkArray }) => {
     <div className={styles.footer_links}>
       <p>{title}</p>
       <ul>
-        {linkArray.map((link) => {
+        {linkArray.map((link, index) => {
           return (
-            <li>
+            <li key={index}>
               <Link href={link}>{link}</Link>
             </li>
           );
