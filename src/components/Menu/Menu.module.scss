@@ -1,0 +1,33 @@
+@use "../../styles/main.scss" as *;
+
+.menu {
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  width: 100%;
+  background: rgba($base-black, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: top 0.5s ease-in-out;
+
+  @include breakpoint(large) {
+    display: none;
+  }
+
+  @include flex-column();
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    margin-top: auto;
+  }
+
+  padding: rem(32) 0;
+}
+
+.menu_open {
+  top: 0;
+}

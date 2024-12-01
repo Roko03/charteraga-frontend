@@ -7,6 +7,7 @@ import Button from "@/design-system/Button";
 import Link from "next/link";
 import clsx from "clsx";
 import Burger from "../Burger";
+import Menu from "../Menu";
 
 type HeaderVariant = "primary" | "secondary";
 
@@ -16,21 +17,31 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ variant = "primary" }) => {
   return (
-    <header className={clsx([styles.header, [styles[variant]]])}>
-      <div className={styles.header__container}>
-        <Link href={"/"} className={styles.header__logo}>
-          <Image src={Logo} alt="logo" />
-        </Link>
-        <Links />
-        <div className={styles.header__buttons}>
+    <>
+      <header className={clsx([styles.header, [styles[variant]]])}>
+        <div className={styles.header__container}>
+          <Link href={"/"} className={styles.header__logo}>
+            <Image src={Logo} alt="logo" />
+          </Link>
+          <Links />
+          <div className={styles.header__buttons}>
+            <Link href={"/login"} className={styles.header__buttons__login}>
+              Log in
+            </Link>
+            <Button className={styles.header__buttons__book}>Book now</Button>
+          </div>
+          <Burger variant={variant} />
+        </div>
+      </header>
+      <Menu>
+        <div className={styles.menu_buttons}>
           <Link href={"/login"} className={styles.header__buttons__login}>
             Log in
           </Link>
           <Button className={styles.header__buttons__book}>Book now</Button>
         </div>
-        <Burger variant={variant} />
-      </div>
-    </header>
+      </Menu>
+    </>
   );
 };
 

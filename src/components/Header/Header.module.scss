@@ -87,3 +87,10 @@
     }
   }
 }
+
+.menu_buttons {
+  margin-top: auto;
+  @include flex-row();
+  align-items: center;
+  gap: rem(20);
+}
