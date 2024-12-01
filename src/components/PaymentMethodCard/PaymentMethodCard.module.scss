@@ -1,0 +1,34 @@
+@use "../../styles/main.scss" as *;
+
+.payment_method_card {
+  width: 100%;
+  max-width: rem(272);
+  height: rem(220);
+  padding: rem(32);
+  border-radius: rem(6);
+  box-shadow: 2px 2px 6px 0px rgba(72, 75, 87, 0.06),
+    16px 16px 32px 0px rgba(92, 108, 123, 0.1);
+
+  @include flex-column();
+  background-color: rgb(57, 120, 176);
+
+  &__range {
+    @include flex-row();
+    width: 100%;
+    height: rem(8);
+    background-color: $off-white;
+    border-radius: rem(10);
+    position: relative;
+    overflow: hidden;
+
+    span {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      height: rem(8);
+      border-radius: rem(10);
+      background-color: $emerald-green;
+    }
+  }
+}
