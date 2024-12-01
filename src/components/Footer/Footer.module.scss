@@ -26,6 +26,8 @@
 
   &__logo {
     grid-area: logo;
+    width: fit-content;
+    align-self: flex-start;
   }
 
   &__links {

@@ -1,0 +1,17 @@
+@use "../../styles/main.scss" as *;
+
+.social_icons {
+  @include flex-row();
+  gap: rem(8);
+
+  &__icon {
+    width: rem(40);
+    height: rem(40);
+    border-radius: 100%;
+    background-color: rgba($base-white, 0.1);
+
+    @include flex-column();
+    justify-content: center;
+    align-items: center;
+  }
+}

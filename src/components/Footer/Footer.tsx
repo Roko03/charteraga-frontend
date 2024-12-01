@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../assets/icons/logo.svg";
 import FooterLinks from "../FooterLinks";
+import SocialIcons from "../SocialIcons";
 
 const Footer: React.FC = () => {
   return (
@@ -26,7 +27,9 @@ const Footer: React.FC = () => {
             linkArray={["program", "program", "program"]}
           />
         </div>
-        <div className={styles.footer__social}></div>
+        <div className={styles.footer__social}>
+          <SocialIcons />
+        </div>
       </div>
     </footer>
   );
