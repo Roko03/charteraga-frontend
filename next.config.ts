@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
-const path = require("path");
+import path from "path";
+const withVideos = require('next-videos')
 
 const nextConfig: NextConfig = {
   reactStrictMode: false,
@@ -16,4 +17,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withVideos(nextConfig);
