@@ -4,7 +4,7 @@ import { poppins } from "../../styles/fonts";
 import Layout from "@/components/Layout";
 
 export const metadata: Metadata = {
-  title: "CHARTERAG",
+  title: "Destination route",
   description: "Workspace Frontend task",
 };
 
