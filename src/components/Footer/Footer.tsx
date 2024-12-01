@@ -5,6 +5,7 @@ import Image from "next/image";
 import Logo from "../../assets/icons/logo.svg";
 import FooterLinks from "../FooterLinks";
 import SocialIcons from "../SocialIcons";
+import FooterLegalNotice from "../FooterLegalNotice";
 
 const Footer: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const Footer: React.FC = () => {
           <SocialIcons />
         </div>
       </div>
+      <FooterLegalNotice />
     </footer>
   );
 };
