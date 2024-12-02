@@ -2,8 +2,9 @@ import React from "react";
 import styles from "./ExperienceSection.module.scss";
 import ExperienceRatingList from "../ExperienceRatingList";
 import TaglineBox from "@/components/TaglineBox";
+import ExperienceCardList from "../ExperienceCardList";
 
-const ExperienceSection = () => {
+const ExperienceSection: React.FC = () => {
   return (
     <section className={styles.experience_section}>
       <div className={styles.experience_section__container}>
@@ -18,6 +19,7 @@ const ExperienceSection = () => {
             lifelong memories.
           </p>
         </div>
+        <ExperienceCardList />
       </div>
     </section>
   );
