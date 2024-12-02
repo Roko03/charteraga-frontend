@@ -1,1 +1,21 @@
 @use "../../../styles/main.scss" as *;
+
+.destination_banner_section {
+  padding: rem(85) 0 rem(160);
+
+  &__container {
+    @include container();
+  }
+
+  &__detail {
+    padding-top: rem(83);
+    @include flex-column();
+    p {
+      color: $navy-blue;
+      font-size: rem(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
