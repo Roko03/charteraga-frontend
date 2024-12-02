@@ -1,0 +1,9 @@
+@use "../../../styles/main.scss" as *;
+
+.home_payment_section {
+  margin: rem(180) 0;
+
+  &__container {
+    @include container();
+  }
+}
