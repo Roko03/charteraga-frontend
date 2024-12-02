@@ -1,0 +1,35 @@
+@use "../../../styles/main.scss" as *;
+
+.home_flexible_payment_section {
+  padding: rem(93) 0 rem(29);
+  background-color: $navy-blue;
+
+  &__container {
+    @include container();
+  }
+
+  &__title {
+    color: $base-white;
+    text-align: center;
+  }
+
+  &__list {
+    margin: rem(115) 0;
+    @include flex-row();
+    justify-content: center;
+    gap: rem(64);
+  }
+
+  &__description {
+    text-align: center;
+    font-size: rem(13);
+    font-style: normal;
+    font-weight: 400;
+    line-height: rem(20);
+    color: #a7a7a7;
+
+    span {
+      color: #2962d0;
+    }
+  }
+}
