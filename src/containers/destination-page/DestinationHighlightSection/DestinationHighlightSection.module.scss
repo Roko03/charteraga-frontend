@@ -1,4 +1,15 @@
 @use "../../../styles/main.scss" as *;
 
 .destination_highlight_section {
+  &__container {
+    @include container();
+  }
+  &__title {
+    color: $base-black;
+    text-align: center;
+    font-size: rem(32);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+  }
 }
