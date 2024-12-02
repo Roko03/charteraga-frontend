@@ -1,19 +1,32 @@
 import React from "react";
 import styles from "./Title.module.scss";
 import TaglineBox from "../TaglineBox";
+import { TaglineBoxVariant } from "../TaglineBox/TaglineBox";
+import clsx from "clsx";
 
-const Title: React.FC = () => {
+interface TitleProps {
+  hasTagline: boolean;
+  taglineTitle?: string;
+  taglineVariant?: TaglineBoxVariant;
+  title: string;
+  description: string;
+}
+
+const Title: React.FC<TitleProps> = ({
+  hasTagline = false,
+  taglineTitle = "WELCOME",
+  taglineVariant = "primary",
+  title,
+  description,
+}) => {
   return (
     <div className={styles.title}>
-      <TaglineBox title={"WELCOME"} />
-      <div className={styles.title__box}>
-        <h2>What is Charterag experience</h2>
-        <p>
-          Join us for a week of sailing, unique adventures and exclusive parties
-          in stunning locations. Explore new places daily. Dive into local
-          culture. Dance the nights away. Leave with new friends and lifelong
-          memories.
-        </p>
+      {hasTagline && (
+        <TaglineBox title={taglineTitle} variant={taglineVariant} />
+      )}
+      <div className={clsx([styles.title__box, [styles[taglineVariant]]])}>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
     </div>
   );

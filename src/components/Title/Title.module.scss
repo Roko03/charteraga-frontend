@@ -17,3 +17,14 @@
     }
   }
 }
+
+.primary {
+  color: $base-white;
+}
+
+.secondary {
+  color: $navy-blue;
+  p {
+    color: $light-black !important;
+  }
+}
