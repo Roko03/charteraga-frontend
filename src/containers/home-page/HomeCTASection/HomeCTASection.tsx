@@ -4,11 +4,13 @@ import Title from "@/components/Title";
 import Button from "@/design-system/Button";
 import Image from "next/image";
 import InstagramIcon from "../../../assets/icons/instagram-blue.svg";
+import HomeCTAGallery from "../HomeCTAGallery";
 
 const HomeCTASection: React.FC = () => {
   return (
     <section className={styles.home_cta_section}>
       <div className={styles.home_cta_section__container}>
+        <HomeCTAGallery />
         <Title
           hasTagline={false}
           taglineVariant={"secondary"}

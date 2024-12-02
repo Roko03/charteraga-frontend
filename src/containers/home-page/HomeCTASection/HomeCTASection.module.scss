@@ -7,7 +7,7 @@
 }
 
 .home_cta__buttons {
-  margin: rem(60) 0;
+  margin: rem(60) 0 rem(115);
   @include flex-row();
   gap: rem(13);
   justify-content: center;
