@@ -3,6 +3,9 @@
 .range {
   @include flex-row();
   width: 100%;
+  @include breakpoint(medium) {
+    min-width: rem(180);
+  }
   height: rem(8);
   background-color: $off-white;
   border-radius: rem(10);
