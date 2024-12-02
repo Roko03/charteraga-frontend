@@ -1,6 +1,6 @@
 import React from "react";
 import DestinationBannerSection from "../DestinationBannerSection";
-import DestinationHighlightSection from "../DestinationHighlightSection/DestinationHighlightSection";
+import DestinationHighlightSection from "../DestinationHighlightSection";
 
 const Destination = () => {
   return (
