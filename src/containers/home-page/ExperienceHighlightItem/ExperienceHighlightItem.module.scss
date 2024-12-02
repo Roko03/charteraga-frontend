@@ -1,0 +1,29 @@
+@use "../../../styles/main.scss" as *;
+
+.highlight_item {
+  max-width: rem(322);
+  @include flex-column();
+  gap: rem(8);
+
+  &__header {
+    @include flex-row();
+    align-items: center;
+    gap: rem(10);
+
+    span {
+      font-size: rem(24);
+      font-style: normal;
+      font-weight: 500;
+      line-height: rem(24);
+      color: $navy-blue;
+    }
+  }
+
+  p {
+    color: $navy-blue;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: rem(24);
+  }
+}

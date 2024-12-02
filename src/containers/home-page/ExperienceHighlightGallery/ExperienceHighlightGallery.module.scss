@@ -1,0 +1,16 @@
+@use "../../../styles/main.scss" as *;
+
+.experience_higlight_gallery {
+  padding: rem(110) 0;
+  display: grid;
+  justify-content: center;
+  gap: rem(13.34);
+  grid-template-columns: repeat(auto-fit, minmax(265.18px, 265.18px));
+}
+
+.experience_higlight_gallery_item {
+  width: rem(265.18);
+  height: rem(241.683);
+  object-fit: cover;
+  border-radius: rem(13.4);
+}

@@ -1,0 +1,8 @@
+@use "../../../styles/main.scss" as *;
+
+.experience_higlight_section {
+  margin: rem(180) 0;
+  &__container {
+    @include container();
+  }
+}
