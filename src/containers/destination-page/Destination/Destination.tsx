@@ -1,7 +1,12 @@
 import React from "react";
+import DestinationBannerSection from "../DestinationBannerSection";
 
 const Destination = () => {
-  return <>EJ</>;
+  return (
+    <>
+      <DestinationBannerSection />
+    </>
+  );
 };
 
 export default Destination;
