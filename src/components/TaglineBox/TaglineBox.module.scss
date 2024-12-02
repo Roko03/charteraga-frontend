@@ -26,6 +26,11 @@
 }
 
 .secondary_tagline {
+  background-color: $deep-blue;
+  color: $base-white;
+}
+
+.third_tagline {
   background-color: rgba($deep-blue, 0.1);
   color: $deep-blue;
 }

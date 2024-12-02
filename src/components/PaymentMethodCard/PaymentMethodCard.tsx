@@ -5,6 +5,7 @@ import PaymentOne from "../../assets/icons/dollar-1.svg";
 import PaymentTwo from "../../assets/icons/dollar-2.svg";
 import PaymentThree from "../../assets/icons/dollar-3.svg";
 import clsx from "clsx";
+import RangeComponent from "../RangeComponent/RangeComponent";
 
 type PaymentMethodCardVariant = "first" | "second" | "third";
 type PaymentMethodDetails = {
@@ -57,11 +58,10 @@ const PaymentMethodCard: React.FC<PaymentMethodCardProps> = ({
       </div>
       <h3>{getPaymentMethodCardVariant(payment).paymentTitle}%</h3>
       <p>{getPaymentMethodCardVariant(payment).label}</p>
-      <div className={styles.payment_method_card__range}>
-        <span
-          style={{ width: `${getPaymentMethodCardVariant(payment).range}%` }}
-        ></span>
-      </div>
+      <RangeComponent
+        rangeNumber={getPaymentMethodCardVariant(payment).range}
+        color="#1DC072"
+      />
     </div>
   );
 };
