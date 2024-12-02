@@ -1,0 +1,27 @@
+@use "../../../styles/main.scss" as *;
+
+.home_cta_section {
+  &__container {
+    @include container();
+  }
+}
+
+.home_cta__buttons {
+  margin: rem(60) 0;
+  @include flex-row();
+  gap: rem(13);
+  justify-content: center;
+}
+
+.home_cta_first_button {
+  background-color: $yellow;
+  color: $navy-blue;
+  box-shadow: 0px 2px 6px 0px rgba(37, 51, 102, 0.1),
+    0px 16px 32px 0px rgba(50, 90, 137, 0.1);
+}
+.home_cta_second_button {
+  background-color: $base-white;
+  color: $navy-blue;
+  box-shadow: 0px 2px 6px 0px rgba(37, 51, 102, 0.16),
+    0px 16px 32px 0px rgba(50, 90, 137, 0.1);
+}
