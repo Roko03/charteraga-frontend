@@ -1,10 +1,17 @@
 import React from "react";
 import styles from "./HomeFlexiblePaymentSection.module.scss";
 import PaymentMethodCard from "@/components/PaymentMethodCard";
+import Image from "next/image";
+import PaymentTexture from "../../../assets/images/payment-texture.png";
 
 const HomeFlexiblePaymentSection: React.FC = () => {
   return (
     <section className={styles.home_flexible_payment_section}>
+      <Image
+        src={PaymentTexture}
+        alt="texture"
+        className={styles.home_flexible_payment_section__texture}
+      />
       <div className={styles.home_flexible_payment_section__container}>
         <h2 className={styles.home_flexible_payment_section__title}>
           Flexible payment
