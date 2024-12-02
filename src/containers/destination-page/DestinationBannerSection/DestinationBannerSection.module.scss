@@ -5,9 +5,14 @@
 
   &__container {
     @include container();
+    @include flex-row();
   }
 
   &__detail {
+    width: 100%;
+    @include breakpoint(large) {
+      width: 50%;
+    }
     padding-top: rem(83);
     @include flex-column();
     p {

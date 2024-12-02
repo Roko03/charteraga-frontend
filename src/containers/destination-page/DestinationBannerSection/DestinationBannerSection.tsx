@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./DestinationBannerSection.module.scss";
 import DestinationBanner from "../DestinationBanner/DestinationBanner";
+import DestinationCard from "../DestinationCard";
 
 const DestinationBannerSection: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const DestinationBannerSection: React.FC = () => {
             marina.
           </p>
         </div>
+        <DestinationCard />
       </div>
     </section>
   );
