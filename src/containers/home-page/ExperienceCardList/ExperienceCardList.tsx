@@ -8,8 +8,11 @@ import RelaxImage from "../../../assets/images/relax.png";
 
 const ExperienceCardList: React.FC = () => {
   return (
-    <div>
+    <div className={styles.experience_card_list}>
       <ExperienceCardListItem imageUrl={SailImage} title={"Sail"} />
+      <ExperienceCardListItem imageUrl={PartyImage} title={"Party"} />
+      <ExperienceCardListItem imageUrl={ExploreImage} title={"Explore"} />
+      <ExperienceCardListItem imageUrl={RelaxImage} title={"Relax"} />
     </div>
   );
 };
