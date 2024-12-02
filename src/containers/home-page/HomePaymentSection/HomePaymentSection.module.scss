@@ -6,4 +6,15 @@
   &__container {
     @include container();
   }
+
+  &__options {
+    margin-top: rem(100);
+    @include flex-column();
+    justify-content: center;
+    align-items: center;
+    gap: rem(60);
+    @include breakpoint(medium) {
+      @include flex-row();
+    }
+  }
 }
