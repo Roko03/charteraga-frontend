@@ -8,7 +8,14 @@
     gap: rem(17);
     text-align: center;
 
+    h2 {
+      margin: 0 auto;
+      max-width: rem(608);
+    }
+
     p {
+      margin: 0 auto;
+      max-width: rem(608);
       font-feature-settings: "liga" off, "clig" off;
       font-size: rem(18);
       font-style: normal;
