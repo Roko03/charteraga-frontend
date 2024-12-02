@@ -1,0 +1,21 @@
+@use "../../styles/main.scss" as *;
+
+.range {
+  @include flex-row();
+  width: 100%;
+  height: rem(8);
+  background-color: $off-white;
+  border-radius: rem(10);
+  position: relative;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: rem(8);
+    border-top-right-radius: rem(6);
+    border-bottom-right-radius: rem(6);
+  }
+}
