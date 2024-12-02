@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TaglineBox.module.scss";
 import clsx from "clsx";
 
-type TaglineBoxVariant = "primary" | "secondary";
+export type TaglineBoxVariant = "primary" | "secondary";
 
 interface TaglineBoxProps {
   title: string;

@@ -1,0 +1,28 @@
+@use "../../../../styles/main.scss" as *;
+
+.experience_rating_item {
+  @include flex-row();
+  align-items: center;
+  gap: rem(33);
+
+  &__box {
+    @include flex-column();
+    gap: rem(2);
+
+    span {
+      color: $base-white;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      font-size: rem(20.779);
+    }
+
+    p {
+      color: $base-white;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      font-size: rem(14);
+    }
+  }
+}

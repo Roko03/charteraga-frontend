@@ -1,0 +1,9 @@
+@use "../../../styles/main.scss" as *;
+
+.experience_card_list {
+  margin-top: rem(118.65);
+  @include flex-row();
+  flex-wrap: wrap;
+  gap: rem(8);
+  justify-content: center;
+}

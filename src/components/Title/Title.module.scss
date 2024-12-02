@@ -1,0 +1,30 @@
+@use "../../styles/main.scss" as *;
+
+.title {
+  @include flex-column();
+  gap: rem(17);
+  &__box {
+    @include flex-column();
+    gap: rem(17);
+    text-align: center;
+
+    p {
+      font-feature-settings: "liga" off, "clig" off;
+      font-size: rem(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+}
+
+.primary {
+  color: $base-white;
+}
+
+.secondary {
+  color: $navy-blue;
+  p {
+    color: $light-black !important;
+  }
+}
