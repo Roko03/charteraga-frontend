@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TaglineBox.module.scss";
 import clsx from "clsx";
 
-export type TaglineBoxVariant = "primary" | "secondary";
+export type TaglineBoxVariant = "primary" | "secondary" | "third";
 
 interface TaglineBoxProps {
   title: string;
@@ -17,6 +17,7 @@ const TaglineBox: React.FC<TaglineBoxProps> = ({
     const taglineColor: { [key in TaglineBoxVariant]: string } = {
       primary: styles.primary_tagline,
       secondary: styles.secondary_tagline,
+      third: styles.third_tagline,
     };
 
     return taglineColor[variant];
