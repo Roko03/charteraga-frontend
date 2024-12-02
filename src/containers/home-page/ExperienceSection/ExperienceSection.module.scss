@@ -7,5 +7,22 @@
 
   &__container {
     @include container();
+    @include flex-column();
+    color: $base-white;
+  }
+
+  &__text {
+    margin: rem(17) auto 0;
+    @include flex-column();
+    gap: rem(17);
+    text-align: center;
+
+    p {
+      font-feature-settings: "liga" off, "clig" off;
+      font-size: rem(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
   }
 }

@@ -5,8 +5,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: rem(42);
+  margin-bottom: rem(112);
 
   @include breakpoint(large) {
     column-gap: rem(211);
+    margin-bottom: rem(224.5);
   }
 }

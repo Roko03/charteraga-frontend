@@ -1,6 +1,7 @@
 @use "../../styles/main.scss" as *;
 
 .tagline_box {
+  margin: 0 auto;
   @include flex-row();
   width: fit-content;
   height: rem(25);
