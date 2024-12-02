@@ -1,0 +1,45 @@
+@use "../../../styles/main.scss" as *;
+
+.home_flexible_payment_section {
+  background-color: $navy-blue;
+  position: relative;
+  &__texture {
+    height: 100%;
+    position: absolute;
+  }
+
+  &__container {
+    @include container();
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__title {
+    padding-top: rem(93);
+    color: $base-white;
+    text-align: center;
+  }
+
+  &__list {
+    margin: rem(115) 0;
+    @include flex-row();
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(64);
+  }
+
+  &__description {
+    padding-bottom: rem(29);
+    text-align: center;
+    font-size: rem(13);
+    font-style: normal;
+    font-weight: 400;
+    line-height: rem(20);
+    color: #a7a7a7;
+
+    span {
+      color: #2962d0;
+    }
+  }
+}

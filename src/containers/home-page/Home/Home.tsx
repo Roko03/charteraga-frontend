@@ -5,6 +5,7 @@ import DestinationsSection from "../DestinationsSection";
 import Testimonial from "@/components/Testimonial";
 import ExperienceHighlightSection from "../ExperienceHighlightSection";
 import HomePaymentSection from "../HomePaymentSection";
+import HomeFlexiblePaymentSection from "../HomeFlexiblePaymentSection";
 
 const Home: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       </Testimonial>
       <ExperienceHighlightSection />
       <HomePaymentSection />
+      <HomeFlexiblePaymentSection />
     </>
   );
 };
