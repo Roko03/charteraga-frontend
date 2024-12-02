@@ -1,7 +1,7 @@
 @use "../../../styles/main.scss" as *;
 
 .destination_banner_section {
-  padding: rem(85) 0 rem(160);
+  padding: 0 0 rem(60);
 
   &__container {
     @include container();
