@@ -13,6 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100% !important;
+  max-width: rem(555);
 }
 
 .swiper-button-prev:after,
