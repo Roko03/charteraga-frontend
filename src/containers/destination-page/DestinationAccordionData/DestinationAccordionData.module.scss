@@ -23,7 +23,10 @@
 
   &__abilities {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr 1fr;
+    }
     column-gap: rem(49.85);
     row-gap: rem(27);
   }
