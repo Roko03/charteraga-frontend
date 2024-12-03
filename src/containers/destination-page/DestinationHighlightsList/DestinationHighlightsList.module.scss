@@ -3,7 +3,7 @@
 .highlights_list {
   margin-top: rem(80);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(376px, 376px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 376px));
   gap: rem(65);
   justify-content: center;
 }
