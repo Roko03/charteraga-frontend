@@ -1,1 +1,8 @@
 @use "../../../styles/main.scss" as *;
+
+.accorion_list {
+  margin: 0 auto;
+  max-width: rem(1010);
+  @include flex-column();
+  gap: rem(39);
+}

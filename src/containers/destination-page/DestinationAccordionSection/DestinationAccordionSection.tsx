@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./DestinationAccordionSection.module.scss";
 import Title from "@/components/Title";
+import DestinationAccordionList from "../DestinationAccordionList";
 
 const DestinationAccordionSection: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const DestinationAccordionSection: React.FC = () => {
           title="Choose your route"
           description="Explore what you can get for in each route"
         />
+        <DestinationAccordionList />
       </div>
     </section>
   );

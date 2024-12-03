@@ -48,7 +48,7 @@
     background-color: $frost-blue;
 
     &__active {
-      @include flex-row();
+      display: block;
     }
   }
 }
