@@ -10,20 +10,29 @@ export type AccordionAbilityItem = {
 
 interface DestinationAccordionDataProps {
   imageUrl: StaticImageData;
-  abilities?: AccordionAbilityItem[];
+  abilities: AccordionAbilityItem[];
 }
 
 const DestinationAccordionData: React.FC<DestinationAccordionDataProps> = ({
   imageUrl,
+  abilities,
 }) => {
   return (
     <div className={styles.accordion_data}>
       <Image src={imageUrl} alt="accordion-image" />
       <div className={styles.accordion_data__abilities}>
-        <div className={styles.accordion_data__abilities_item}>
-          <p>Organised parties</p>
-          <RangeComponent rangeNumber={100} color="#1DC072" />
-        </div>
+        {abilities.map((ability, index) => {
+          return (
+            <div className={styles.accordion_data__abilities_item} key={index}>
+              <p>{ability.name}</p>
+              <RangeComponent
+                rangeNumber={ability.abilityNumber}
+                color="#1DC072"
+                backgroundColor="#d2d2e2"
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
