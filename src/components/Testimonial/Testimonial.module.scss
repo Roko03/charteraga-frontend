@@ -31,14 +31,17 @@
   }
 
   &__children {
+    width: 100%;
+    @include container();
     position: absolute;
     z-index: 3;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translate(-20%, -50%);
+    transform: translate(-50%, -50%);
 
-    @include breakpoint(medium) {
-      top: 20%;
+    @include breakpoint(large) {
+      width: fit-content;
+      top: 30%;
       left: 65%;
       transform: translate(-20%, -65%);
     }

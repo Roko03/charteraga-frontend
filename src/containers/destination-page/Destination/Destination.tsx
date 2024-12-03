@@ -5,6 +5,7 @@ import DestinationAccordionSection from "../DestinationAccordionSection";
 import DestinationCrewSection from "../DestinationCrewSection";
 import DestinationPayAndSailSection from "../DestinationPayAndSailSection";
 import Testimonial from "@/components/Testimonial";
+import DestinationCTA from "../DestinationCTA";
 
 const Destination = () => {
   return (
@@ -15,7 +16,7 @@ const Destination = () => {
       <DestinationCrewSection />
       <DestinationPayAndSailSection />
       <Testimonial>
-        <h3>Ready to go?</h3>
+        <DestinationCTA />
       </Testimonial>
     </>
   );
