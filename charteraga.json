@@ -1,0 +1,76 @@
+{
+    "routes": [
+        {
+            "id":1,
+            "name":"Party",
+            "imageUrl": "/party-route.png",
+            "price": "710",
+            "mainAbilities": [
+                {
+                    "name":"Party Ability",
+                    "range":75
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":40
+                }
+            ],
+            "subtitle": "",
+            "description": ""
+        },
+        {
+            "id":2,
+            "name":"Ultra",
+            "imageUrl": "/ultra-route.png",
+            "price": "792",
+            "mainAbilities": [
+               {
+                    "name":"Party Ability",
+                    "range":90
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":25
+                }
+            ],
+            "subtitle": "",
+            "description": ""
+        },
+        {
+            "id":3,
+            "name":"Greece",
+            "imageUrl": "/greece-route.png",
+            "price": "710",
+            "mainAbilities": [
+              {
+                    "name":"Party Ability",
+                    "range":40
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":80
+                }
+            ],
+            "subtitle": "",
+            "description": ""
+        },
+        {
+            "id":4,
+            "name":"Adventure",
+            "imageUrl": "/adventure-route.png",
+            "price": "792",
+            "mainAbilities": [
+               {
+                    "name":"Party Ability",
+                    "range":10
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":95
+                }
+            ],
+            "subtitle": "",
+            "description": ""
+        }
+    ]
+}
