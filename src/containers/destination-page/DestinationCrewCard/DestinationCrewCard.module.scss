@@ -1,6 +1,7 @@
 @use "../../../styles/main.scss" as *;
 
 .destination_crew_card {
+  margin: rem(145) 0;
   display: grid;
   grid-template-areas:
     "data data"
