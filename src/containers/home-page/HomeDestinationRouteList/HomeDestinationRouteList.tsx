@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./HomeDestinationRouteList.module.scss";
 import HomeDestinationRouteItem from "./HomeDestinationRouteItem";
-import { getData } from "@/lib/getData";
+import { getRoute } from "@/lib/getRoute";
 
 export const dynamic = "force-dynamic";
 
 const HomeDestinationRouteList: React.FC = async () => {
-  const dataRoutes = await getData();
+  const routes = await getRoute();
 
   return (
     <div className={styles.home_destination_route_list}>
-      {dataRoutes.map((route) => {
+      {routes.map((route) => {
         return (
           <HomeDestinationRouteItem
             key={route.id}

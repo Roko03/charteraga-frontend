@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./DestinationHighlightSection.module.scss";
 import DestinationHighlightsList from "../DestinationHighlightsList";
 
-const DestinationHighlightSection = () => {
+const DestinationHighlightSection: React.FC = () => {
   return (
     <section className={styles.destination_highlight_section}>
       <div className={styles.destination_highlight_section__container}>
