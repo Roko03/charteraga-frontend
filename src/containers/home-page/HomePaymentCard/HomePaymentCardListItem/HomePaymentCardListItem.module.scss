@@ -1,0 +1,7 @@
+@use "../../../../styles/main.scss" as *;
+
+.home_payment_card_list_item {
+  @include flex-row();
+  align-items: center;
+  gap: rem(4);
+}
