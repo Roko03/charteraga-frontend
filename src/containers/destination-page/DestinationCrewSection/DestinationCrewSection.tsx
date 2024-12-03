@@ -4,9 +4,11 @@ import Title from "@/components/Title";
 import DestinationCrewCard from "../DestinationCrewCard";
 import { StaticImageData } from "next/image";
 import ImageOne from "../../../assets/images/solo-cabin.png";
+import ImageTwo from "../../../assets/images/calamaran.png";
+import ImageThree from "../../../assets/images/skipper-host.png";
 
 const DestinationCrewSection: React.FC = () => {
-  const galleryArray: StaticImageData[] = [ImageOne];
+  const galleryArray: StaticImageData[] = [ImageOne, ImageTwo, ImageThree];
   return (
     <section className={styles.destination_crew_section}>
       <Title
