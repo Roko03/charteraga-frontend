@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./DestinationBanner.module.scss";
 import Image from "next/image";
-import DestinationImage from "../../../assets/images/party-route.png";
 import { RouteType } from "@/types/types";
 
 interface DestinationBannerProps {

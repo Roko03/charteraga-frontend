@@ -10,7 +10,7 @@ import DestinationAccordionData, {
 } from "../DestinationAccordionData/DestinationAccordionData";
 
 const DestinationAccordionList: React.FC = () => {
-  let abilityArray: AccordionAbilityItem[] = [
+  const abilityArray: AccordionAbilityItem[] = [
     {
       abilityNumber: 100,
       name: "Organised parties",

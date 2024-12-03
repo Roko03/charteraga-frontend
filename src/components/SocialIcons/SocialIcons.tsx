@@ -9,17 +9,17 @@ const SocialIcons: React.FC = () => {
   return (
     <ul className={styles.social_icons}>
       <li className={styles.social_icons__icon}>
-        <a href="/">
+        <a href="instagram.com">
           <Image src={InstagramIcon} alt="instagram" width={21} height={21} />
         </a>
       </li>
       <li className={styles.social_icons__icon}>
-        <a href="/">
+        <a href="facebook.com">
           <Image src={FacebookIcon} alt="facebook" width={21} height={21} />
         </a>
       </li>
       <li className={styles.social_icons__icon}>
-        <a href="/">
+        <a href="youtube.com">
           <Image src={YoutubeIcon} alt="youtube" width={21} height={21} />
         </a>
       </li>
