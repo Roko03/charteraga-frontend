@@ -1,9 +1,8 @@
 @use "../../../styles/main.scss" as *;
 
 .experience_higlight_list {
-  @include flex-row();
   gap: rem(62);
-
   justify-content: space-between;
   flex-wrap: wrap;
+  @include flex-row();
 }

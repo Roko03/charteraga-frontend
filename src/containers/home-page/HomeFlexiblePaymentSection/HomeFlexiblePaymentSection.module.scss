@@ -23,10 +23,10 @@
 
   &__list {
     margin: rem(115) 0;
-    @include flex-row();
     flex-wrap: wrap;
     justify-content: center;
     gap: rem(64);
+    @include flex-row();
   }
 
   &__description {

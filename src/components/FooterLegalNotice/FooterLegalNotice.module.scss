@@ -50,12 +50,12 @@
 
     ul {
       grid-area: links;
-      @include flex-row();
       justify-content: center;
+      gap: rem(69);
       @include breakpoint(medium) {
         justify-content: flex-start;
       }
-      gap: rem(69);
+      @include flex-row();
 
       li a {
         font-size: rem(14);

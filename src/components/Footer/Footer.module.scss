@@ -32,10 +32,10 @@
 
   &__links {
     grid-area: links;
-    @include flex-row();
     flex-wrap: wrap;
     column-gap: rem(80);
     row-gap: rem(42);
+    @include flex-row();
 
     @include breakpoint(medium) {
       gap: rem(120);

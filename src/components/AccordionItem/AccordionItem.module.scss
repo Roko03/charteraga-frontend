@@ -12,9 +12,9 @@
     height: 100%;
     background-color: $frost-blue;
 
-    @include flex-row();
     align-items: center;
     justify-content: space-between;
+    @include flex-row();
 
     span {
       color: $navy-blue;

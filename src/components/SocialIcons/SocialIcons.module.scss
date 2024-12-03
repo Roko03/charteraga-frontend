@@ -1,8 +1,8 @@
 @use "../../styles/main.scss" as *;
 
 .social_icons {
-  @include flex-row();
   gap: rem(8);
+  @include flex-row();
 
   &__icon {
     width: rem(40);

@@ -1,9 +1,9 @@
 @use "../../../../styles/main.scss" as *;
 
 .experience_rating_item {
-  @include flex-row();
   align-items: center;
   gap: rem(33);
+  @include flex-row();
 
   &__box {
     @include flex-column();

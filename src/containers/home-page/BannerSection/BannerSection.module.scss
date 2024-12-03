@@ -34,10 +34,10 @@
     }
 
     &__icons {
-      @include flex-row();
       gap: rem(7.53);
       flex-wrap: wrap;
       justify-content: center;
+      @include flex-row();
     }
   }
 }

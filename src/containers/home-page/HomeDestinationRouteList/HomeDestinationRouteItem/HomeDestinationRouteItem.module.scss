@@ -41,9 +41,9 @@
 
     @include flex-column();
     @include breakpoint(large) {
-      @include flex-row();
       align-items: center;
       justify-content: space-between;
+      @include flex-row();
     }
 
     color: $base-white;
@@ -69,9 +69,9 @@
   }
 
   &__flex {
-    @include flex-row();
     align-items: center;
     gap: rem(18);
+    @include flex-row();
 
     h2 {
       font-size: rem(24) !important;
@@ -89,9 +89,9 @@
       @include flex-column();
       gap: rem(12);
       @include breakpoint(large) {
-        @include flex-row();
         gap: rem(24);
         align-items: center;
+        @include flex-row();
       }
 
       p {

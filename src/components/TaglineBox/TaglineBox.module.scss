@@ -2,7 +2,6 @@
 
 .tagline_box {
   margin: 0 auto;
-  @include flex-row();
   width: fit-content;
   height: rem(25);
   padding: rem(10) rem(16);
@@ -10,6 +9,7 @@
   align-items: center;
   gap: rem(4);
   border-radius: rem(10);
+  @include flex-row();
 
   text-align: center;
   font-family: var(--poppins);

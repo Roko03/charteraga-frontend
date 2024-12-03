@@ -26,9 +26,9 @@
   }
 
   &__rating {
-    @include flex-row();
     gap: rem(6);
     align-items: center;
+    @include flex-row();
 
     span {
       color: $slate-grey;
@@ -53,9 +53,9 @@
     gap: rem(20);
 
     li {
-      @include flex-row();
       align-items: center;
       gap: rem(16);
+      @include flex-row();
     }
   }
 

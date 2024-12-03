@@ -22,10 +22,9 @@
   display: none;
 
   @include breakpoint(large) {
-    @include flex-row();
     align-items: center;
-
     gap: rem(32);
+    @include flex-row();
   }
 }
 

@@ -3,9 +3,9 @@
 .home_cta_gallery {
   padding-top: rem(210);
   position: relative;
-  @include flex-row();
   margin: 0 auto;
   justify-content: center;
+  @include flex-row();
 
   &__first {
     grid-area: first;

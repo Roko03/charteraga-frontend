@@ -6,9 +6,9 @@
   gap: rem(8);
 
   &__header {
-    @include flex-row();
     align-items: center;
     gap: rem(10);
+    @include flex-row();
 
     span {
       font-size: rem(24);

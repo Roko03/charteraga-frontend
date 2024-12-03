@@ -17,9 +17,9 @@
     @include flex-column();
     gap: rem(12);
     @include breakpoint(large) {
-      @include flex-row();
       justify-content: space-between;
       align-items: center;
+      @include flex-row();
     }
 
     span {

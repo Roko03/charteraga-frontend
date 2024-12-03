@@ -63,9 +63,9 @@
 }
 
 .button_card {
-  @include flex-row();
   justify-content: center;
   align-items: center;
+  @include flex-row();
   width: 100%;
   background-color: $navy-blue;
   color: $base-white;
