@@ -1,40 +1,28 @@
 @use "../../../styles/main.scss" as *;
 
-swiper {
+.swiper {
   width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide {
-  @include breakpoint(large) {
-    width: 80%;
-  }
+.swiper-pagination {
+  position: relative !important;
+  margin-top: rem(33);
 }
 
-.swiper-slide:nth-child(2n) {
-  width: 100%;
-  @include breakpoint(large) {
-    width: 60%;
-  }
+.swiper-pagination-bullet {
+  width: rem(22) !important;
+  height: rem(9) !important;
+  border-radius: rem(10) !important;
+  background-color: rgba($base-white, 0.65) !important;
 }
 
-.swiper-slide:nth-child(3n) {
-  width: 100%;
-  @include breakpoint(large) {
-    width: 40%;
-  }
-}
-
-.swiper-slide {
-  width: 100%;
-  @include breakpoint(large) {
-    width: rem(500) !important;
-  }
+.swiper-pagination-bullet-active {
+  background-color: $base-white !important;
 }

@@ -1,8 +1,9 @@
 @use "../../../../styles/main.scss" as *;
 
 .home_review_slide {
+  margin-right: auto;
   width: 100%;
-  max-width: rem(500);
+  width: rem(500);
   height: 337px;
   padding: 42px 76px 42px 30px;
   border-radius: 10px;

@@ -1,10 +1,6 @@
 @use "../../../styles/main.scss" as *;
 
 .home_testimonial_data {
-  padding-top: 0;
-  @include breakpoint(large) {
-    padding-top: 50%;
-  }
   h3 {
     color: $navy-blue;
     font-size: rem(36);

@@ -25,6 +25,9 @@ const HomeReviewsSlider: React.FC = () => {
       <SwiperSlide>
         <HomeReviewsSlide />
       </SwiperSlide>
+      <SwiperSlide>
+        <HomeReviewsSlide />
+      </SwiperSlide>
     </Swiper>
   );
 };
