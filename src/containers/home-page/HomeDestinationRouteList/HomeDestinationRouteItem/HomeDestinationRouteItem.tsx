@@ -22,7 +22,6 @@ const HomeDestinationRouteItem: React.FC<HomeDestinationRouteItemProps> = ({
   destinationPartyAbility = null,
   destinationAdventureAbility = null,
 }) => {
-  console.log(imageUrl);
   return (
     <Link
       href={`/destination/${destinationId}`}
