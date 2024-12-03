@@ -46,12 +46,6 @@
     padding-top: rem(60);
     @include flex-column();
     gap: rem(12.17);
-
-    li {
-      @include flex-row();
-      align-items: center;
-      gap: rem(4);
-    }
   }
 }
 

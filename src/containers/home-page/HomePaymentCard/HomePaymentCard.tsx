@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./HomePaymentCard.module.scss";
 import clsx from "clsx";
-import Image from "next/image";
-import ListCheckIcon from "../../../assets/icons/check-mark.svg";
-import ListUnCheckIcon from "../../../assets/icons/uncheck-mark.svg";
+import HomePaymentCardListItem from "./HomePaymentCardListItem";
 
 interface HomePaymentCardProps {
   hasDetailSpan?: boolean;
@@ -29,42 +27,10 @@ const HomePaymentCard: React.FC<HomePaymentCardProps> = ({
         )}
       </div>
       <ul>
-        <li>
-          <Image
-            src={ListCheckIcon}
-            alt="icon-check"
-            width={20.87}
-            height={20.87}
-          />
-          Icon
-        </li>
-        <li>
-          <Image
-            src={ListCheckIcon}
-            alt="icon-check"
-            width={20.87}
-            height={20.87}
-          />
-          Icon
-        </li>
-        <li>
-          <Image
-            src={ListCheckIcon}
-            alt="icon-check"
-            width={20.87}
-            height={20.87}
-          />
-          Icon
-        </li>
-        <li>
-          <Image
-            src={ListUnCheckIcon}
-            alt="icon-uncheck"
-            width={20.87}
-            height={20.87}
-          />
-          Icon
-        </li>
+        <HomePaymentCardListItem variant={"check"} title="experience" />
+        <HomePaymentCardListItem variant={"check"} title="lorem ipsum dolor" />
+        <HomePaymentCardListItem variant={"uncheck"} title="dolor sit et" />
+        <HomePaymentCardListItem variant={"check"} title="et santi dolor sum" />
       </ul>
     </div>
   );
