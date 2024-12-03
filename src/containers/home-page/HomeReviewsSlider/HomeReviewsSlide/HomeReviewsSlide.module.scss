@@ -1,0 +1,13 @@
+@use "../../../../styles/main.scss" as *;
+
+.home_review_slide {
+  width: 100%;
+  max-width: rem(500);
+  height: 337px;
+  padding: 42px 76px 42px 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 59px 54px 22px 0px rgba(0, 0, 0, 0),
+    38px 34px 21px 0px rgba(0, 0, 0, 0), 21px 19px 17px 0px rgba(0, 0, 0, 0.02),
+    10px 9px 13px 0px rgba(0, 0, 0, 0.03), 2px 2px 7px 0px rgba(0, 0, 0, 0.03);
+}

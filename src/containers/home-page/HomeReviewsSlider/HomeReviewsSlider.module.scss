@@ -1,1 +1,8 @@
 @use "../../../styles/main.scss" as *;
+
+.home_reviews_slider {
+  margin-top: rem(55);
+  width: 100%;
+  height: fit-content;
+  min-height: rem(400);
+}
