@@ -31,16 +31,16 @@
 
   &__buttons {
     display: none;
+    gap: rem(40);
+    align-items: center;
     @include breakpoint(large) {
       @include flex-row();
     }
-    gap: rem(40);
-    align-items: center;
 
     &__login {
       background-color: transparent;
       font-size: rem(16);
-      font-style: normal;
+
       font-weight: 700;
       line-height: rem(24);
       transition: all 0.4s ease-in-out;

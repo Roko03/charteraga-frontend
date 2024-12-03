@@ -57,7 +57,7 @@
       @include breakpoint(large) {
         font-size: rem(20);
       }
-      font-style: normal;
+
       font-weight: 400;
       line-height: rem(28.269);
     }
@@ -78,7 +78,7 @@
       @include breakpoint(large) {
         font-size: rem(28) !important;
       }
-      font-style: normal;
+
       font-weight: 600;
       line-height: rem(39.577);
     }

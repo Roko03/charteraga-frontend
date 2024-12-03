@@ -17,7 +17,7 @@
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.81.0",
+    "sass": "^1.81.1",
     "sass-loader": "^16.0.3"
   },
   "devDependencies": {
