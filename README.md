@@ -15,6 +15,8 @@ You can view the live demo of the project [here](https://charteraga-frontend.ver
 
 I need 20-25 hours of work to make this project.
 
+## How to Use
+
 Clone the repository
 
 ```bash
