@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import HomeReviewsSlide from "./HomeReviewsSlide/HomeReviewsSlide";
 import "./slider.scss";
+import ProfileImage from "../../../assets/images/profile.png";
 
 const HomeReviewsSlider: React.FC = () => {
   return (
@@ -20,13 +21,31 @@ const HomeReviewsSlider: React.FC = () => {
       className={styles.home_reviews_slider}
     >
       <SwiperSlide>
-        <HomeReviewsSlide />
+        <HomeReviewsSlide
+          imageUrl={ProfileImage}
+          username="Courtney Henry"
+          grade={4}
+          title="Amazing experience"
+          description="Lorem ipsum dolor sit amet consectetur. Sapien eget morbi aliquam ultricies est ornare. Eu ac lorem eleifend diam tellus magnis volutpat nulla."
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <HomeReviewsSlide />
+        <HomeReviewsSlide
+          imageUrl={ProfileImage}
+          username="Courtney Henry"
+          grade={4}
+          title="Amazing experience"
+          description="Lorem ipsum dolor sit amet consectetur. Sapien eget morbi aliquam ultricies est ornare. Eu ac lorem eleifend diam tellus magnis volutpat nulla."
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <HomeReviewsSlide />
+        <HomeReviewsSlide
+          imageUrl={ProfileImage}
+          username="Courtney Henry"
+          grade={4}
+          title="Amazing experience"
+          description="Lorem ipsum dolor sit amet consectetur. Sapien eget morbi aliquam ultricies est ornare. Eu ac lorem eleifend diam tellus magnis volutpat nulla."
+        />
       </SwiperSlide>
     </Swiper>
   );
