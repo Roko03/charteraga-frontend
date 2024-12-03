@@ -5,11 +5,11 @@
   height: rem(24);
   width: rem(32);
 
-  display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
   align-items: end;
+  display: flex;
 
   @include breakpoint(large) {
     display: none;
