@@ -6,7 +6,7 @@ const BannerVideo: React.FC = () => {
     <div className={styles.banner}>
       <div className={styles.banner__header}></div>
       <video
-        src={require("../../../assets/video/banner-video.mp4")}
+        src={"banner-video.mp4"}
         autoPlay
         muted
         loop
