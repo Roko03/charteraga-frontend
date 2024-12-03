@@ -1,0 +1,24 @@
+@use "../../styles/main.scss" as *;
+
+.scroll_box {
+  position: fixed;
+  bottom: 20%;
+  right: 8%;
+  cursor: pointer;
+  z-index: 95;
+
+  width: rem(50);
+  height: rem(50);
+  @include flex-row();
+  align-items: center;
+  justify-content: center;
+  background-color: $base-white;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.scroll_box_visible {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
