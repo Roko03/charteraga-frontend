@@ -1,0 +1,41 @@
+@use "../../styles/main.scss" as *;
+
+.title {
+  gap: rem(17);
+  @include flex-column();
+  &__box {
+    gap: rem(17);
+    text-align: center;
+    @include flex-column();
+
+    h2 {
+      margin: 0 auto;
+      max-width: rem(608);
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: rem(608);
+      font-feature-settings: "liga" off, "clig" off;
+      font-size: rem(18);
+
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+}
+
+.primary {
+  color: $base-white;
+}
+
+.secondary {
+  color: $navy-blue;
+}
+
+.third {
+  color: $navy-blue;
+  p {
+    color: $light-black !important;
+  }
+}

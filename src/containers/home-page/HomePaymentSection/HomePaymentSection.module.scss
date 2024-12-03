@@ -1,0 +1,20 @@
+@use "../../../styles/main.scss" as *;
+
+.home_payment_section {
+  margin: rem(180) 0;
+
+  &__container {
+    @include container();
+  }
+
+  &__options {
+    margin-top: rem(100);
+    justify-content: center;
+    align-items: center;
+    gap: rem(60);
+    @include flex-column();
+    @include breakpoint(medium) {
+      @include flex-row();
+    }
+  }
+}

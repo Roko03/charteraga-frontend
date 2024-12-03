@@ -1,0 +1,111 @@
+@use "../../styles/main.scss" as *;
+
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: rem(140);
+  align-items: center;
+  background-color: transparent;
+  @include flex-column();
+
+  &__container {
+    @include container();
+
+    justify-content: space-between;
+    @include flex-row();
+    align-items: center;
+  }
+
+  &__logo {
+    width: rem(108);
+    @include breakpoint(large) {
+      width: rem(216);
+    }
+
+    &__icon {
+      @include flex-row();
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-image: url("../../assets/icons/charterag.svg");
+      mask-image: url("../../assets/icons/charterag.svg");
+      height: 120px;
+      width: 126px;
+    }
+  }
+
+  &__buttons {
+    display: none;
+    gap: rem(40);
+    align-items: center;
+    @include breakpoint(large) {
+      @include flex-row();
+    }
+
+    &__login {
+      background-color: transparent;
+      font-size: rem(16);
+
+      font-weight: 700;
+      line-height: rem(24);
+      transition: all 0.4s ease-in-out;
+    }
+
+    &__book {
+      background-color: $yellow;
+    }
+  }
+}
+
+.primary {
+  .header__buttons {
+    &__login {
+      color: $base-white;
+    }
+
+    &__login:hover {
+      color: $navy-blue;
+    }
+  }
+
+  .header__logo__icon {
+    background-color: $base-white;
+  }
+}
+
+.secondary {
+  ul {
+    li a {
+      color: $navy-blue;
+    }
+
+    li:hover a {
+      color: $base-white;
+    }
+  }
+
+  .header__buttons {
+    &__login {
+      color: $navy-blue;
+    }
+
+    &__login:hover {
+      color: $base-white;
+    }
+  }
+
+  .header__logo__icon {
+    background-color: $navy-blue;
+  }
+}
+
+.menu_buttons {
+  margin-top: auto;
+  align-items: center;
+  gap: rem(20);
+  @include flex-row();
+}

@@ -1,0 +1,59 @@
+@use "../../styles/main.scss" as *;
+
+.accordion {
+  height: fit-content;
+  width: 100%;
+  border-radius: rem(10);
+  overflow: hidden;
+
+  &__title {
+    width: 100%;
+    padding: rem(16) rem(24);
+    height: 100%;
+    background-color: $frost-blue;
+
+    align-items: center;
+    justify-content: space-between;
+    @include flex-row();
+
+    span {
+      color: $navy-blue;
+      font-size: rem(18.279);
+
+      font-weight: 600;
+      line-height: 16.617px;
+      letter-spacing: 0.083px;
+    }
+  }
+
+  &__arrow_icon {
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-image: url("../../assets/icons/arrow.svg");
+    mask-image: url("../../assets/icons/arrow.svg");
+    background-color: $navy-blue;
+    width: rem(24);
+    height: rem(24);
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__box {
+    display: none;
+    padding: rem(12) rem(32) rem(64);
+    background-color: $frost-blue;
+
+    &__active {
+      display: block;
+    }
+  }
+}
+
+.accordion_open_icon {
+  transition: all 0.2s ease-in-out;
+  transform: rotate(-90deg);
+}

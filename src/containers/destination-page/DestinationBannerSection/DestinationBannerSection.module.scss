@@ -1,0 +1,26 @@
+@use "../../../styles/main.scss" as *;
+
+.destination_banner_section {
+  padding: 0 0 rem(60);
+
+  &__container {
+    @include container();
+    @include flex-row();
+  }
+
+  &__detail {
+    width: 100%;
+    @include breakpoint(large) {
+      width: 50%;
+    }
+    padding-top: rem(83);
+    @include flex-column();
+    p {
+      color: $navy-blue;
+      font-size: rem(18);
+
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}

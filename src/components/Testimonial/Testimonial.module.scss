@@ -1,0 +1,54 @@
+@use "../../styles/main.scss" as *;
+
+.testimonial {
+  margin-top: rem(215);
+  position: relative;
+  width: 100%;
+  height: rem(560);
+  @include breakpoint(medium) {
+    height: rem(796);
+  }
+  overflow: hidden;
+
+  &__header {
+    position: absolute;
+    height: rem(50);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 9.04%,
+      #ecfbff 50%
+    );
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: rem(1440);
+  }
+
+  &__children {
+    margin-top: rem(100);
+    width: 100%;
+
+    padding: 0 rem(40);
+
+    @include breakpoint(large) {
+      padding-left: 60%;
+      padding-right: 0;
+    }
+  }
+}

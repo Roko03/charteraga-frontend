@@ -1,0 +1,83 @@
+@use "../../styles/main.scss" as *;
+
+.button {
+  @include flex-row();
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--poppins);
+}
+
+.button_primary,
+.button_secondary {
+  border-radius: rem(50);
+  align-items: center;
+  justify-content: center;
+
+  font-size: rem(16);
+
+  font-weight: 500;
+  line-height: rem(24);
+}
+
+.button_primary {
+  text-align: center;
+  padding: rem(10);
+  min-width: rem(147);
+  gap: rem(10);
+  letter-spacing: 1.22px;
+  text-transform: uppercase;
+}
+
+.button_secondary {
+  background-color: $base-white;
+  color: $navy-blue;
+  min-width: rem(150);
+  padding: rem(8) rem(12) rem(8) rem(18);
+  gap: rem(12);
+
+  &__arrow {
+    width: rem(28);
+    height: rem(28);
+    border-radius: 100%;
+    background-color: rgba($azure, 0.08);
+    align-items: center;
+    justify-content: center;
+    @include flex-column();
+
+    &__image {
+      margin: auto;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-image: url("../../assets/icons/arrow.svg");
+      mask-image: url("../../assets/icons/arrow.svg");
+      background-color: $navy-blue;
+      width: rem(12);
+      height: rem(12);
+    }
+  }
+}
+
+.button_card {
+  justify-content: center;
+  align-items: center;
+  @include flex-row();
+  width: 100%;
+  background-color: $navy-blue;
+  color: $base-white;
+  text-transform: uppercase;
+  padding: rem(20);
+
+  font-size: rem(15);
+
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: rem(1.406);
+
+  border-radius: rem(8);
+  box-shadow: 0 rem(14) rem(33) 0 rgba(0, 0, 0, 0.1);
+}

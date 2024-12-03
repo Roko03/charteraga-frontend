@@ -1,0 +1,58 @@
+@use "../../../styles/main.scss" as *;
+
+.home_payment_card {
+  width: 100%;
+  max-width: rem(434.802);
+  height: rem(408.714);
+  border-radius: rem(15);
+  box-shadow: 52px 47px 20px 0px rgba(0, 0, 0, 0),
+    33px 30px 18px 0px rgba(0, 0, 0, 0), 19px 17px 15px 0px rgba(0, 0, 0, 0.02),
+    8px 7px 11px 0px rgba(0, 0, 0, 0.03), 2px 2px 6px 0px rgba(0, 0, 0, 0.03);
+  padding: rem(24);
+  @include breakpoint(large) {
+    padding: rem(44) rem(37);
+  }
+
+  &__detail {
+    gap: rem(12);
+    @include flex-column();
+    @include breakpoint(large) {
+      justify-content: space-between;
+      align-items: center;
+      @include flex-row();
+    }
+
+    span {
+      font-size: rem(32);
+
+      font-weight: 400;
+      line-height: rem(37);
+      @include breakpoint(medium) {
+        max-width: 50%;
+      }
+    }
+
+    &__span {
+      align-self: center;
+      width: fit-content;
+      background-color: $navy-blue;
+      color: $base-white;
+      border-radius: rem(5);
+      padding: rem(10);
+    }
+  }
+
+  ul {
+    padding-top: rem(60);
+    gap: rem(12.17);
+    @include flex-column();
+  }
+}
+
+.primary {
+  background-color: rgba(#00becc, 0.1);
+}
+
+.secondary {
+  background-color: $base-white;
+}

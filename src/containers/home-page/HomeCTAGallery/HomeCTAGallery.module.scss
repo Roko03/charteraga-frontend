@@ -1,0 +1,50 @@
+@use "../../../styles/main.scss" as *;
+
+.home_cta_gallery {
+  padding-top: rem(210);
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  @include flex-row();
+
+  &__first {
+    grid-area: first;
+    object-fit: cover;
+    width: 140.197px;
+    height: fit-content;
+    transform: translate(60px, -60px);
+
+    @include breakpoint(large) {
+      transform: translate(120px, -120px);
+      width: 233.197px;
+      height: 349.958px;
+    }
+  }
+
+  &__second {
+    grid-area: second;
+    z-index: 2;
+    object-fit: cover;
+    width: 212.186px;
+    height: fit-content;
+    @include breakpoint(large) {
+      width: 412.186px;
+      height: 274.957px;
+    }
+  }
+
+  &__third {
+    grid-area: third;
+    object-fit: cover;
+    width: 122.917px;
+    height: fit-content;
+
+    transform: translate(-60px, -60px);
+
+    @include breakpoint(large) {
+      transform: translate(-120px, -120px);
+      width: 262.917px;
+      height: 273.433px;
+    }
+  }
+}

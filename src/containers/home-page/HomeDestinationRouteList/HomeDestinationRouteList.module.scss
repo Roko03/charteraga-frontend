@@ -1,0 +1,7 @@
+@use "../../../styles/main.scss" as *;
+
+.home_destination_route_list {
+  margin-top: rem(133);
+  gap: rem(78);
+  @include flex-column();
+}

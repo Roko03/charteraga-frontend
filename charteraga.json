@@ -1,0 +1,76 @@
+{
+    "routes": [
+        {
+            "id":1,
+            "name":"Party",
+            "imageUrl": "/party-route.png",
+            "price": "710",
+            "mainAbilities": [
+                {
+                    "name":"Party Ability",
+                    "range":75
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":40
+                }
+            ],
+            "subtitle": "The best stories are yet to be told",
+            "description": "From mountains and canyons to fjord-like bays, nostalgic old towns to most stunning beaches. Get to now Croatia’s twin sister – Montenegro  Walk the medieval streets of Kotor, dine the most amazing seafood in the Fishermans village. Feel like a millionaire in Porto Montenegro, the most luxurious marina in this part of the World. Visit nostalgic old towns Perast, Risan and Herceg Novi. Hike mountains in Kotor. Get wild in Budva and Tivat. Relax in freshly opened, chic Lazure marina."
+        },
+        {
+            "id":2,
+            "name":"Ultra",
+            "imageUrl": "/ultra-route.png",
+            "price": "792",
+            "mainAbilities": [
+               {
+                    "name":"Party Ability",
+                    "range":90
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":25
+                }
+            ],
+            "subtitle": "The best stories are yet to be told",
+            "description": "From mountains and canyons to fjord-like bays, nostalgic old towns to most stunning beaches. Get to now Croatia’s twin sister – Montenegro  Walk the medieval streets of Kotor, dine the most amazing seafood in the Fishermans village. Feel like a millionaire in Porto Montenegro, the most luxurious marina in this part of the World. Visit nostalgic old towns Perast, Risan and Herceg Novi. Hike mountains in Kotor. Get wild in Budva and Tivat. Relax in freshly opened, chic Lazure marina."
+        },
+        {
+            "id":3,
+            "name":"Greece",
+            "imageUrl": "/greece-route.png",
+            "price": "710",
+            "mainAbilities": [
+              {
+                    "name":"Party Ability",
+                    "range":40
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":80
+                }
+            ],
+            "subtitle": "The best stories are yet to be told",
+            "description": "From mountains and canyons to fjord-like bays, nostalgic old towns to most stunning beaches. Get to now Croatia’s twin sister – Montenegro  Walk the medieval streets of Kotor, dine the most amazing seafood in the Fishermans village. Feel like a millionaire in Porto Montenegro, the most luxurious marina in this part of the World. Visit nostalgic old towns Perast, Risan and Herceg Novi. Hike mountains in Kotor. Get wild in Budva and Tivat. Relax in freshly opened, chic Lazure marina."
+        },
+        {
+            "id":4,
+            "name":"Adventure",
+            "imageUrl": "/adventure-route.png",
+            "price": "792",
+            "mainAbilities": [
+               {
+                    "name":"Party Ability",
+                    "range":10
+                },
+                {
+                    "name":"Adventure Ability",
+                    "range":95
+                }
+            ],
+            "subtitle": "The best stories are yet to be told",
+            "description": "From mountains and canyons to fjord-like bays, nostalgic old towns to most stunning beaches. Get to now Croatia’s twin sister – Montenegro  Walk the medieval streets of Kotor, dine the most amazing seafood in the Fishermans village. Feel like a millionaire in Porto Montenegro, the most luxurious marina in this part of the World. Visit nostalgic old towns Perast, Risan and Herceg Novi. Hike mountains in Kotor. Get wild in Budva and Tivat. Relax in freshly opened, chic Lazure marina."
+        }
+    ]
+}

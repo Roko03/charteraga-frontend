@@ -1,0 +1,8 @@
+@use "../../../styles/main.scss" as *;
+
+.destinations_section {
+  padding: rem(149) 0 0;
+  &__container {
+    @include container();
+  }
+}

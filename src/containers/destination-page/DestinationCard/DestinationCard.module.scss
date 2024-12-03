@@ -1,0 +1,71 @@
+@use "../../../styles/main.scss" as *;
+
+.destination_card {
+  margin-left: auto;
+  transform: translateY(-40%);
+  z-index: 8;
+  display: none;
+  @include breakpoint(large) {
+    @include flex-column();
+  }
+
+  width: rem(368);
+  padding: rem(32) rem(42);
+  background-color: $base-white;
+  border-radius: rem(10);
+  box-shadow: 2px 2px 6px 0px rgba(72, 75, 87, 0.06),
+    16px 16px 32px 0px rgba(92, 108, 123, 0.1);
+
+  h3 {
+    color: $navy-blue;
+    font-size: rem(24);
+
+    font-weight: 600;
+    line-height: 32px;
+    padding-bottom: rem(8);
+  }
+
+  &__rating {
+    gap: rem(6);
+    align-items: center;
+    @include flex-row();
+
+    span {
+      color: $slate-grey;
+      font-size: rem(18);
+
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    p {
+      color: #979797;
+      font-size: rem(15);
+
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  ul {
+    padding: rem(40) 0;
+    @include flex-column();
+    gap: rem(20);
+
+    li {
+      align-items: center;
+      gap: rem(16);
+      @include flex-row();
+    }
+  }
+
+  &__bottom {
+    padding-top: rem(20);
+    text-align: center;
+    font-size: rem(13);
+
+    font-weight: 400;
+    line-height: 20px;
+    color: $slate-grey;
+  }
+}
