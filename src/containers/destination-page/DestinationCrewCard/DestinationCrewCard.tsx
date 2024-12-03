@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./DestinationCrewCard.module.scss";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import Button from "@/design-system/Button";
 import clsx from "clsx";
+import DestinationSlider from "../DestinationSlider";
 
 interface DestinationCrewCardProps {
   variant?: "primary" | "secondary";
@@ -26,7 +27,7 @@ const DestinationCrewCard: React.FC<DestinationCrewCardProps> = ({
   return (
     <div className={clsx([styles.destination_crew_card, [styles[variant]]])}>
       <div className={styles.destination_crew_card__main}>
-        <Image src={gallery[0]} alt="image" />
+        <DestinationSlider gallery={gallery} />
         <h3>{imageTitle}</h3>
         <p>{imageDescription}</p>
       </div>

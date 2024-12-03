@@ -15,14 +15,6 @@
     gap: rem(12);
     @include flex-column();
 
-    img {
-      width: 100%;
-      max-width: rem(555);
-      height: rem(500);
-      object-fit: cover;
-      border-radius: rem(15);
-    }
-
     h3 {
       font-size: rem(22);
 
