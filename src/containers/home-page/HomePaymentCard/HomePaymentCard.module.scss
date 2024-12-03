@@ -14,8 +14,8 @@
   }
 
   &__detail {
-    @include flex-column();
     gap: rem(12);
+    @include flex-column();
     @include breakpoint(large) {
       justify-content: space-between;
       align-items: center;
@@ -44,8 +44,8 @@
 
   ul {
     padding-top: rem(60);
-    @include flex-column();
     gap: rem(12.17);
+    @include flex-column();
   }
 }
 

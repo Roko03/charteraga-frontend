@@ -1,9 +1,9 @@
 @use "../../styles/main.scss" as *;
 
 .footer_links {
-  @include flex-column();
   gap: rem(20);
   align-items: flex-start;
+  @include flex-column();
 
   p {
     font-size: rem(14);
@@ -13,8 +13,8 @@
   }
 
   ul {
-    @include flex-column();
     gap: rem(6);
+    @include flex-column();
 
     li a {
       font-size: rem(14);

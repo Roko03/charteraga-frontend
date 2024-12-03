@@ -29,7 +29,7 @@
 }
 
 .menu {
-  @include flex-column();
   align-items: center;
   gap: rem(36);
+  @include flex-column();
 }

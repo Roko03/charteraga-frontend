@@ -12,10 +12,10 @@
     position: absolute;
     z-index: 3;
     color: $base-white;
-    @include flex-column();
     gap: rem(8);
     align-items: center;
     justify-content: center;
+    @include flex-column();
 
     h1 {
       font-size: rem(42);

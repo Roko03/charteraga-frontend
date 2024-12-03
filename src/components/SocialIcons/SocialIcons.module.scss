@@ -10,8 +10,8 @@
     border-radius: 100%;
     background-color: rgba($base-white, 0.1);
 
-    @include flex-column();
     justify-content: center;
     align-items: center;
+    @include flex-column();
   }
 }

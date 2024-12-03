@@ -2,8 +2,8 @@
 
 .highlight_item {
   max-width: rem(322);
-  @include flex-column();
   gap: rem(8);
+  @include flex-column();
 
   &__header {
     align-items: center;

@@ -4,6 +4,6 @@
   margin: 0 auto;
   padding: rem(120) 0;
   max-width: rem(1010);
-  @include flex-column();
   gap: rem(39);
+  @include flex-column();
 }

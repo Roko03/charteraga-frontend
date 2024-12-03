@@ -12,8 +12,8 @@
   &__main {
     grid-area: main;
 
-    @include flex-column();
     gap: rem(12);
+    @include flex-column();
 
     img {
       width: 100%;
@@ -40,9 +40,9 @@
   }
 
   &__data {
-    @include flex-column();
     grid-area: data;
     gap: rem(24);
+    @include flex-column();
 
     h2 {
       font-feature-settings: "liga" off, "clig" off;

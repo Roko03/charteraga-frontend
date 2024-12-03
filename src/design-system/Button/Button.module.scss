@@ -37,13 +37,13 @@
   gap: rem(12);
 
   &__arrow {
-    @include flex-column();
     width: rem(28);
     height: rem(28);
     border-radius: 100%;
     background-color: rgba($azure, 0.08);
     align-items: center;
     justify-content: center;
+    @include flex-column();
 
     &__image {
       margin: auto;

@@ -5,15 +5,15 @@
   z-index: 999;
   width: 100%;
   height: rem(140);
-  @include flex-column();
   align-items: center;
   background-color: transparent;
+  @include flex-column();
 
   &__container {
     @include container();
 
-    @include flex-row();
     justify-content: space-between;
+    @include flex-row();
   }
 
   &__logo {

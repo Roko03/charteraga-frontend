@@ -17,9 +17,9 @@
     display: none;
   }
 
-  @include flex-column();
   align-items: center;
   justify-content: center;
+  @include flex-column();
 
   ul {
     margin-top: auto;

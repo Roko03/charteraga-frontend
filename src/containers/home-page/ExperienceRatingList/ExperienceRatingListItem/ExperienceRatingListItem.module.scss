@@ -6,8 +6,8 @@
   @include flex-row();
 
   &__box {
-    @include flex-column();
     gap: rem(2);
+    @include flex-column();
 
     span {
       color: $base-white;

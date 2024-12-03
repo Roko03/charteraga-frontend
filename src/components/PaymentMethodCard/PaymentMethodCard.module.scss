@@ -14,9 +14,9 @@
   &__dollar {
     width: rem(56);
     height: rem(56);
-    @include flex-column();
     justify-content: center;
     align-items: center;
+    @include flex-column();
     border-radius: 100%;
     background-color: $mint-green;
   }

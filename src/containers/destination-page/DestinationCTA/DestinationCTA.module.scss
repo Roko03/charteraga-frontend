@@ -2,8 +2,8 @@
 
 .destination_cta {
   margin-top: rem(24);
-  @include flex-column();
   gap: rem(22);
+  @include flex-column();
   color: $navy-blue;
 
   h2 {

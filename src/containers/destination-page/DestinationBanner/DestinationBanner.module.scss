@@ -26,8 +26,8 @@
 
   &__detail {
     width: 100%;
-    @include flex-column();
     gap: rem(7);
+    @include flex-column();
     @include container();
     position: absolute;
     z-index: 3;

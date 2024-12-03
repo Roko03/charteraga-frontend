@@ -9,10 +9,10 @@
 
   &__options {
     margin-top: rem(100);
-    @include flex-column();
     justify-content: center;
     align-items: center;
     gap: rem(60);
+    @include flex-column();
     @include breakpoint(medium) {
       @include flex-row();
     }

@@ -50,8 +50,8 @@
   }
 
   &__main {
-    @include flex-column();
     gap: rem(4);
+    @include flex-column();
     p {
       font-size: rem(16);
       @include breakpoint(large) {
@@ -64,8 +64,8 @@
   }
 
   &__ability {
-    @include flex-column();
     gap: rem(24);
+    @include flex-column();
   }
 
   &__flex {
@@ -86,8 +86,8 @@
 
   &__ability {
     &__item {
-      @include flex-column();
       gap: rem(12);
+      @include flex-column();
       @include breakpoint(large) {
         gap: rem(24);
         align-items: center;
