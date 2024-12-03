@@ -18,11 +18,14 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ variant = "primary" }) => {
-  const [isMenuOpen, toogleMenu] = useMenu();
+  const [isMenuOpen, toogleMenu, headerRef] = useMenu();
 
   return (
     <>
-      <header className={clsx([styles.header, [styles[variant]]])}>
+      <header
+        ref={headerRef}
+        className={clsx([styles.header, [styles[variant]]])}
+      >
         <div className={styles.header__container}>
           <Link href={"/"} className={styles.header__logo}>
             <Image src={Logo} alt="logo" />
