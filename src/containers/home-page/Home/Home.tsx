@@ -7,6 +7,7 @@ import ExperienceHighlightSection from "../ExperienceHighlightSection";
 import HomePaymentSection from "../HomePaymentSection";
 import HomeFlexiblePaymentSection from "../HomeFlexiblePaymentSection";
 import HomeCTASection from "../HomeCTASection";
+import HomeTestimonialData from "../HomeTestimonialData";
 
 const Home: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Home: React.FC = () => {
       <ExperienceSection />
       <DestinationsSection />
       <Testimonial>
-        <h3>Our guests loved it!</h3>
+        <HomeTestimonialData />
       </Testimonial>
       <ExperienceHighlightSection />
       <HomePaymentSection />

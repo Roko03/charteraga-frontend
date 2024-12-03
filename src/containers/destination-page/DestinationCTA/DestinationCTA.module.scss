@@ -1,10 +1,11 @@
 @use "../../../styles/main.scss" as *;
 
 .destination_cta {
-  margin-top: rem(24);
+  margin-top: -20%;
   gap: rem(22);
   @include flex-column();
   color: $navy-blue;
+  @include container();
 
   h2 {
     font-size: rem(36);

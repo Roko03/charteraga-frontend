@@ -1,0 +1,61 @@
+@use "../../../../styles/main.scss" as *;
+
+.home_review_slide {
+  margin-right: auto;
+  width: 100%;
+  width: rem(500);
+  height: 337px;
+  padding: 42px 76px 42px 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 59px 54px 22px 0px rgba(0, 0, 0, 0),
+    38px 34px 21px 0px rgba(0, 0, 0, 0), 21px 19px 17px 0px rgba(0, 0, 0, 0.02),
+    10px 9px 13px 0px rgba(0, 0, 0, 0.03), 2px 2px 7px 0px rgba(0, 0, 0, 0.03);
+  color: $navy-blue;
+
+  @include flex-column();
+  gap: rem(12);
+
+  &__profile {
+    width: rem(40);
+    height: rem(40);
+    border-radius: 100%;
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+    }
+  }
+
+  span {
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: rem(18);
+    @include breakpoint(medium) {
+      font-size: rem(22);
+    }
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+  }
+
+  p {
+    height: rem(100);
+    overflow: hidden;
+    font-size: rem(12);
+    @include breakpoint(medium) {
+      font-size: rem(16);
+    }
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}

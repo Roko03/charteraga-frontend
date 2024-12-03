@@ -12,7 +12,9 @@ const Testimonial: React.FC<PropsWithChildren> = ({ children }) => {
         alt="testimonial-image"
         className={styles.testimonial__image}
       />
-      <div className={styles.testimonial__children}>{children}</div>
+      <div className={styles.testimonial__container}>
+        <div className={styles.testimonial__children}>{children}</div>
+      </div>
     </section>
   );
 };
