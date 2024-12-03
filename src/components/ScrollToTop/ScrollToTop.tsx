@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./ScrollToTop.module.scss";
 import Image from "next/image";
 import ArrowUp from "../../assets/icons/arrow-up.svg";

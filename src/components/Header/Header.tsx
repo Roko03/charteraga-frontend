@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import styles from "./Header.module.scss";
-import Image from "next/image";
-import Logo from "../../assets/icons/charterag.svg";
 import Links from "../Links";
 import Button from "@/design-system/Button";
 import Link from "next/link";
@@ -10,6 +7,7 @@ import clsx from "clsx";
 import Burger from "../Burger";
 import Menu from "../Menu";
 import useMenu from "@/hooks/useMenu";
+import styles from "./Header.module.scss";
 
 type HeaderVariant = "primary" | "secondary";
 

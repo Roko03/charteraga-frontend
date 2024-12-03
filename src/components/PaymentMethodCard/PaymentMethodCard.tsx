@@ -9,7 +9,7 @@ import RangeComponent from "../RangeComponent/RangeComponent";
 
 type PaymentMethodCardVariant = "first" | "second" | "third";
 type PaymentMethodDetails = {
-  icon: any;
+  icon: string;
   paymentTitle: number;
   label: string;
   range: number;
