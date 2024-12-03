@@ -1,0 +1,9 @@
+@use "../../../styles/main.scss" as *;
+
+.destination_accordion_section {
+  padding: rem(80) 0 rem(180);
+
+  &__container {
+    @include container();
+  }
+}
