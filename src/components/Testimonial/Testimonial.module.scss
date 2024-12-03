@@ -4,10 +4,7 @@
   margin-top: rem(215);
   position: relative;
   width: 100%;
-  height: rem(560);
-  @include breakpoint(medium) {
-    height: rem(796);
-  }
+  height: rem(796);
   overflow: hidden;
 
   &__header {
