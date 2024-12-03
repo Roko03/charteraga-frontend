@@ -4,9 +4,10 @@ import styles from "./ScrollToTop.module.scss";
 import Image from "next/image";
 import ArrowUp from "../../assets/icons/arrow-up.svg";
 import clsx from "clsx";
+import useScrllToTop from "@/hooks/useScrollToTop";
 
 const ScrollToTop: React.FC = () => {
-  const [isScrollVisible, setIsScrollVisible] = useState(false);
+  const [isScrollVisible, scrollToTop] = useScrllToTop();
 
   return (
     <div
