@@ -3,6 +3,7 @@ import DestinationBannerSection from "../DestinationBannerSection";
 import DestinationHighlightSection from "../DestinationHighlightSection";
 import DestinationAccordionSection from "../DestinationAccordionSection";
 import DestinationCrewSection from "../DestinationCrewSection";
+import DestinationPayAndSailSection from "../DestinationPayAndSailSection";
 
 const Destination = () => {
   return (
@@ -11,6 +12,7 @@ const Destination = () => {
       <DestinationHighlightSection />
       <DestinationAccordionSection />
       <DestinationCrewSection />
+      <DestinationPayAndSailSection />
     </>
   );
 };
