@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import Logo from "../../assets/icons/logo.svg";
+import Logo from "../../assets/icons/charterag.svg";
 import Links from "../Links";
 import Button from "@/design-system/Button";
 import Link from "next/link";
@@ -18,14 +18,17 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ variant = "primary" }) => {
-  const [isMenuOpen, toogleMenu] = useMenu();
+  const [isMenuOpen, toogleMenu, headerRef] = useMenu();
 
   return (
     <>
-      <header className={clsx([styles.header, [styles[variant]]])}>
+      <header
+        ref={headerRef}
+        className={clsx([styles.header, [styles[variant]]])}
+      >
         <div className={styles.header__container}>
           <Link href={"/"} className={styles.header__logo}>
-            <Image src={Logo} alt="logo" />
+            <i className={styles.header__logo__icon}></i>
           </Link>
           <Links />
           <div className={styles.header__buttons}>

@@ -6,11 +6,16 @@ import DestinationCrewSection from "../DestinationCrewSection";
 import DestinationPayAndSailSection from "../DestinationPayAndSailSection";
 import Testimonial from "@/components/Testimonial";
 import DestinationCTA from "../DestinationCTA";
+import { RouteType } from "@/types/types";
 
-const Destination = () => {
+interface DestinationProps {
+  data: RouteType;
+}
+
+const Destination: React.FC<DestinationProps> = ({ data }) => {
   return (
     <>
-      <DestinationBannerSection />
+      <DestinationBannerSection data={data} />
       <DestinationHighlightSection />
       <DestinationAccordionSection />
       <DestinationCrewSection />

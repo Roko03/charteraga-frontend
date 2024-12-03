@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./HomeDestinationRouteItem.module.scss";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import RangeComponent from "@/components/RangeComponent/RangeComponent";
 import ArrowRight from "../../../../assets/icons/arrow.svg";
 
 interface HomeDestinationRouteItemProps {
-  imageUrl: StaticImageData;
+  destinationId: number;
+  imageUrl: string;
   destinationTitle: string;
   destinationPrice: number;
   destinationPartyAbility?: number;
@@ -14,6 +15,7 @@ interface HomeDestinationRouteItemProps {
 }
 
 const HomeDestinationRouteItem: React.FC<HomeDestinationRouteItemProps> = ({
+  destinationId,
   imageUrl,
   destinationTitle,
   destinationPrice,
@@ -21,9 +23,13 @@ const HomeDestinationRouteItem: React.FC<HomeDestinationRouteItemProps> = ({
   destinationAdventureAbility = null,
 }) => {
   return (
-    <Link href={"/destination"} className={styles.home_destination_route}>
+    <Link
+      href={`/destination/${destinationId}`}
+      className={styles.home_destination_route}
+    >
       <Image
         src={imageUrl}
+        fill
         alt="destination-image"
         className={styles.home_destination_route__banner}
       />
