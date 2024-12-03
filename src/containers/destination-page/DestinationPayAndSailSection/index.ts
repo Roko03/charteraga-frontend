@@ -1,0 +1,3 @@
+import DestinationPayAndSailSection from "./DestinationPayAndSailSection";
+
+export default DestinationPayAndSailSection
