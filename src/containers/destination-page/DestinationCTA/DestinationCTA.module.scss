@@ -1,0 +1,35 @@
+@use "../../../styles/main.scss" as *;
+
+.destination_cta {
+  margin-top: rem(24);
+  @include flex-column();
+  gap: rem(22);
+  color: $navy-blue;
+
+  h2 {
+    font-size: rem(36);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%;
+    letter-spacing: -0.72px;
+  }
+
+  p {
+    font-feature-settings: "liga" off, "clig" off;
+    font-size: rem(18);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .button_text {
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  button {
+    align-self: flex-start;
+  }
+}
