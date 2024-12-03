@@ -3,7 +3,10 @@
 .home_flexible_payment_section {
   background-color: $navy-blue;
   position: relative;
+
   &__texture {
+    width: 100%;
+    object-fit: cover;
     height: 100%;
     position: absolute;
   }

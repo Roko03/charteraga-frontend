@@ -3,6 +3,7 @@
 .home_cta_gallery {
   padding-top: rem(210);
   position: relative;
+  width: 100%;
   margin: 0 auto;
   justify-content: center;
   @include flex-row();
@@ -39,7 +40,7 @@
     width: 122.917px;
     height: fit-content;
 
-    transform: translate(-60px, -60px);
+    transform: translate(-78px, -60px);
 
     @include breakpoint(large) {
       transform: translate(-120px, -120px);
