@@ -1,4 +1,4 @@
-# Next Charteraga Website
+# Next JS Charteraga Website
 
 Frontend task for Workspace
 
