@@ -20,7 +20,7 @@ I need 20-25 hours of work to make this project.
 Clone the repository
 
 ```bash
-git clone [https://github.com/Roko03/react-quiz-app.git](https://github.com/Roko03/charteraga-frontend.git)
+git clone https://github.com/Roko03/charteraga-frontend.git
 cd charteraga-frontend
 ```
 
